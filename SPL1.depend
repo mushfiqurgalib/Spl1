@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1580527864 source:g:\spl1-20200129t051253z-001\spl1\main.cpp
+	<bits/stdc++.h>
+	<stack>
+	<string>
+	<algorithm>
+
