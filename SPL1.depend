@@ -5,3 +5,18 @@
 	<string>
 	<algorithm>
 
+1581872370 source:c:\users\user\desktop\spl1-20200129t051253z-001\spl1\main.cpp
+	<stdio.h>
+	"node.h"
+
+1582522288 c:\users\user\desktop\spl1-20200129t051253z-001\spl1\node.h
+
+1582522825 source:c:\users\user\desktop\spl1-20200129t051253z-001\spl1\parser.cpp
+	<bits/stdc++.h>
+	<stack>
+	<string.h>
+	<algorithm>
+	<stdlib.h>
+	<stdbool.h>
+	"node.h"
+
