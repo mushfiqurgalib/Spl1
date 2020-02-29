@@ -33,7 +33,6 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="main.cpp" />
-		<Unit filename="node.h" />
 		<Unit filename="parser.cpp" />
 		<Extensions>
 			<code_completion />
