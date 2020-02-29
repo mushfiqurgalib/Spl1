@@ -29,7 +29,7 @@ Node* createNode(string tag){
     return temp ;
 }
 
-void inseartNode(Node *newNode , int flag){
+void insertNode(Node *newNode , int flag){
     newNode->parent = current ;
     for(int i=0 ; i<10 ; i++){
         if(current->children[i]==NULL)
@@ -72,7 +72,7 @@ void operation(string str){
         if(str[0]=='<') flag = 1 ;
 
         Node *newNode = createNode(str) ;
-        inseartNode(newNode,flag) ;
+        insertNode(newNode,flag) ;
 }
 
 void createTreeControl(void){
