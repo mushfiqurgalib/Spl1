@@ -41,19 +41,6 @@ void insertNode(Node *newNode , int flag){
     }
 }
 
-void outputTreePreOrder(Node *parent)
-{
-    cout << parent->tag << endl ;
-
-    for(int i=0 ; i<10 ; i++){
-
-        if((parent->children[i])!=NULL)
-        {
-            outputTreePreOrder(parent->children[i]) ;
-        }
-    }
-}
-
 void operation(string str){
     //cout << current->tag << endl;
 
@@ -119,7 +106,7 @@ void createTreeControl(void){
             }
 
             string s ;
-            int flagForTag = 0 , flagForTag2 = 0;
+            int flagForTag = 0;
             for(int i = 0 ; i<str.size()-1 && flag=='0' ; i++ ){
                 s = s + str[i] ;
 
@@ -153,7 +140,7 @@ void createTreeControl(void){
 }
 
 
-void getTagParentsChildreansSublings(Node *current,string tagStr,int flag){
+void getTagParentsChildrensSiblings(Node *current,string tagStr,int flag){
 
     if(current->tag == tagStr){
         if(flag==1){
@@ -186,7 +173,7 @@ void getTagParentsChildreansSublings(Node *current,string tagStr,int flag){
 
         if((current->children[i])!=NULL)
         {
-            getTagParentsChildreansSublings(current->children[i] ,tagStr , flag) ;
+            getTagParentsChildrensSiblings(current->children[i] ,tagStr , flag) ;
         }
     }
 
@@ -196,7 +183,7 @@ void getTagParentsChildreansSublings(Node *current,string tagStr,int flag){
 void menu(){
     while(true){
         int choice ;
-        cout << "\n1.get tag's parents\n2.get tag's childrens\n3.get tag's sublings\n4. exit \n " ;
+        cout << "\n1.get tag's parents\n2.get tag's childrens\n3.get tag's siblings\n4. exit \n " ;
         cin >> choice ;
 
         string tagStr ;
@@ -204,13 +191,13 @@ void menu(){
         cin >> tagStr ;
 
         if(choice == 1){
-            getTagParentsChildreansSublings(root , tagStr , 1) ;
+            getTagParentsChildrensSiblings(root , tagStr , 1) ;
         }
         if(choice == 2){
-            getTagParentsChildreansSublings(root , tagStr , 2) ;
+            getTagParentsChildrensSiblings(root , tagStr , 2) ;
         }
         if(choice == 3){
-            getTagParentsChildreansSublings(root , tagStr , 3) ;
+            getTagParentsChildrensSiblings(root , tagStr , 3) ;
         }
         if(choice == 4) break;
 
@@ -221,7 +208,7 @@ void menu(){
 struct node *parser(){
     createLinkList() ;
     createTreeControl() ;
-    outputTreePreOrder(root) ;
+   // outputTreePreOrder(root) ;
 
     menu() ;
 }
