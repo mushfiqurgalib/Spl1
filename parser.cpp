@@ -9,6 +9,7 @@ struct Node{
 };
 
 Node *root , *current;
+ int count=0,headcount=0,buttoncount=0;
 
 void createLinkList(){
     root = NULL ;
@@ -43,6 +44,14 @@ void insertNode(Node *newNode , int flag){
 
 void operation(string str){
     //cout << current->tag << endl;
+        if(str[0]=='<' && str[1]=='h' && str[2]=='e')
+        {
+            headcount++;
+        }
+        if(str[0]=='<' && str[1]=='b'  && str[2]=='u')
+        {
+            buttoncount++;
+        }
 
         if(str[1]=='/'){
             if(current->parent == NULL){
@@ -72,6 +81,7 @@ void createTreeControl(void){
 
     if(iFile.is_open()){
 
+
         iFile >> ch ;
 
         while(ch!='>'){
@@ -81,7 +91,9 @@ void createTreeControl(void){
         str=str+ch ;
 
         root = createNode(str) ;
+        //count++;
         current = root ;
+
 
         while(current!=NULL){
             if(flag == '0')
@@ -118,6 +130,7 @@ void createTreeControl(void){
                         }
                         else s = s + ">" ;
                         flagForTag = 1 ;
+                        count++;
                         operation(s) ;
                     }
 
@@ -145,7 +158,7 @@ void getTagParentsChildrensSiblings(Node *current,string tagStr,int flag){
     if(current->tag == tagStr){
         if(flag==1){
             if(current->parent!=NULL)
-                cout << current->parent->tag << endl ;
+                cout <<tagStr <<"'s parent is" <<current->parent->tag << endl ;
             return ;
         }
 
@@ -153,7 +166,7 @@ void getTagParentsChildrensSiblings(Node *current,string tagStr,int flag){
             for(int i=0 ; i<10 && current->children[i]!=NULL ; i++){
                 string str = current->children[i]->tag ;
                 if(str[0]!='~' && str[0]!='!'){
-                    cout << str << '\t' ;
+                    cout <<tagStr <<"'s children are"<< str << '\t' ;
                 }
             }
         }
@@ -183,7 +196,10 @@ void getTagParentsChildrensSiblings(Node *current,string tagStr,int flag){
 void menu(){
     while(true){
         int choice ;
-        cout << "\n1.get tag's parents\n2.get tag's childrens\n3.get tag's siblings\n4. exit \n " ;
+        cout<<count;
+        cout<<headcount;
+        cout<<buttoncount;
+        cout << "\n1.tag's parent\n2.tag's children\n3. exit \n " ;
         cin >> choice ;
 
         string tagStr ;
