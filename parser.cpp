@@ -3,6 +3,7 @@
 
 using namespace std ;
 
+
 struct Node{
     string tag ;
     Node *parent,*children[10] ;
@@ -196,9 +197,9 @@ void getTagParentsChildrensSiblings(Node *current,string tagStr,int flag){
 void menu(){
     while(true){
         int choice ;
-        cout<<count;
-        cout<<headcount;
-        cout<<buttoncount;
+        cout<<"total tag count "<<count<<endl;
+      //  cout<<headcount;
+        cout<<"total button "<<buttoncount<<endl;
         cout << "\n1.tag's parent\n2.tag's children\n3. exit \n " ;
         cin >> choice ;
 
