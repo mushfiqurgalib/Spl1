@@ -53,6 +53,21 @@ void insertNode(Node *newNode , int flag)
 
 void operation(string str)
 {
+
+    if(str[0]=='<' && str[1]=='h' && str[2]=='t')
+    {
+        fstream newfile;
+        newfile.open("latex.tex",ios::out);
+        if(!newfile)
+        {
+            cout<<"File creation failed";
+        }
+        else
+        {
+            newfile<<"\documentclass{article}";
+        }
+        return;
+    }
     //cout << current->tag << endl;
     if(str[0]=='<' && str[1]=='h' && str[2]=='e')
     {
