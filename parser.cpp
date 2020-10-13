@@ -1,6 +1,6 @@
 #include<iostream>
 #include<fstream>
-
+//
 using namespace std ;
 
 
@@ -57,14 +57,16 @@ void operation(string str)
     if(str[0]=='<' && str[1]=='h' && str[2]=='t')
     {
         fstream newfile;
-        newfile.open("latex.tex",ios::out);
+        newfile.open("latex.txt",std::fstream::in | std::fstream::out | std::fstream::app);
         if(!newfile)
         {
             cout<<"File creation failed";
         }
         else
         {
-            newfile<<"\documentclass{article}";
+            newfile<<"/documentclass{article}/n"
+                    "/begin{document}/n"
+                    "/end{document}";
         }
         return;
     }
@@ -337,11 +339,12 @@ cout<<"total link "<<linkcount<<endl;
 
 }
 
-struct node *parser()
+struct Node* parser()
 {
     createLinkList() ;
     createTreeControl() ;
     // outputTreePreOrder(root) ;
 
     menu() ;
+    return root;
 }

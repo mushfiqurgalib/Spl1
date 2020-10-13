@@ -1,8 +1,9 @@
 #include<stdio.h>
 #include"node.h"
+
 int main()
 {
-    struct Node *root=parser();
+    struct Node *root_not_global=parser();
 
-
+//   operation("<html> ......... </html>");
 }
