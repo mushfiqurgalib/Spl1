@@ -5,14 +5,14 @@
 	<string>
 	<algorithm>
 
-1602496569 source:c:\users\user\desktop\spl1-20200129t051253z-001\spl1\main.cpp
+1602589260 source:c:\users\user\desktop\spl1-20200129t051253z-001\spl1\main.cpp
 	<stdio.h>
 	"node.h"
 
 1602588785 c:\users\user\desktop\spl1-20200129t051253z-001\spl1\node.h
 	<string.h>
 
-1602573557 source:c:\users\user\desktop\spl1-20200129t051253z-001\spl1\parser.cpp
+1602591983 source:c:\users\user\desktop\spl1-20200129t051253z-001\spl1\parser.cpp
 	<iostream>
 	<fstream>
 

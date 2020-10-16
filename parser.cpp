@@ -54,7 +54,7 @@ void insertNode(Node *newNode , int flag)
 void operation(string str)
 {
 
-    if(str[0]=='<' && str[1]=='h' && str[2]=='t')
+if(str[0]=='<' && str[1]=='h' && str[2]=='t')
     {
         fstream newfile;
         newfile.open("latex.txt",std::fstream::in | std::fstream::out | std::fstream::app);
@@ -70,6 +70,7 @@ void operation(string str)
         }
         return;
     }
+
     //cout << current->tag << endl;
     if(str[0]=='<' && str[1]=='h' && str[2]=='e')
     {
