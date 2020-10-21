@@ -1,10 +1,15 @@
+#include<bits/stdc++.h>
+
 #include<string.h>
 
+using namespace std;
 struct Node
 {
-    char *tag;
+    string tag;
     struct Node *parent,*children[100];
 };
-struct Node* parser();
-int operation();
+//struct Node* parser();
+void parser();
+void operation(string str);
+//void operation1(string str);
 //operation(string str);

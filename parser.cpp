@@ -1,25 +1,28 @@
-#include<iostream>
-#include<fstream>
+/*#include<iostream>
+#include<fstream>*/
+
+#include"node.h"
 //
 using namespace std ;
 
 
-struct Node
+/*struct Node
 {
     string tag ;
     Node *parent,*children[10] ;
-};
+};*/
 string emptyTagList[] = {"<br>" , "<hr>" , "<img>" , "<input>" , "<link>" , "<meta>" , "<source>"} ;
 int flagForEmptyTag = 0 ;
 
 Node *root , *current;
-int headcount=0,buttoncount=0,count=0,linkcount=0;
+int headcount=0,buttoncount=0,count1=0,linkcount=0;
 
 void createLinkList()
 {
     root = NULL ;
     current = NULL ;
 }
+
 
 Node* createNode(string tag)
 {
@@ -54,24 +57,111 @@ void insertNode(Node *newNode , int flag)
 void operation(string str)
 {
 
+fstream newfile;
+
+
+
 if(str[0]=='<' && str[1]=='h' && str[2]=='t')
     {
-        fstream newfile;
-        newfile.open("latex.txt",std::fstream::in | std::fstream::out | std::fstream::app);
-        if(!newfile)
-        {
-            cout<<"File creation failed";
-        }
-        else
-        {
-            newfile<<"/documentclass{article}/n"
-                    "/begin{document}/n"
-                    "/end{document}";
-        }
-        return;
-    }
 
-    //cout << current->tag << endl;
+    newfile.open("latex.txt",std::fstream::in | std::fstream::out | std::fstream::app);
+            newfile<<"\\documentclass{article}"<<endl;
+           return;}
+            if(str[0]=='<' && str[1]=='t' && str[2]=='i')
+            {
+                newfile.open("latex.txt",std::fstream::in | std::fstream::out | std::fstream::app);
+    newfile<<"\\title{link}"<<endl;
+
+            }
+            if(str[0]=='<' && str[1]=='b' && str[2]=='o')
+{newfile.open("latex.txt",std::fstream::in | std::fstream::out | std::fstream::app);
+    newfile<<"\\begin{article}"<<endl;
+ //   return;
+}
+if(str[0]=='<' && str[1]=='h' && str[2]=='1')
+{
+    newfile.open("latex.txt",std::fstream::in | std::fstream::out | std::fstream::app);
+    newfile<<"\\section{Heading 1}"<<endl;
+}
+if(str[0]=='<' && str[1]=='h' && str[2]=='2')
+{
+    newfile.open("latex.txt",std::fstream::in | std::fstream::out | std::fstream::app);
+    newfile<<"\\subsection{Heading 2}"<<endl;
+}
+if(str[0]=='<' && str[1]=='h' && str[2]=='3')
+{
+    newfile.open("latex.txt",std::fstream::in | std::fstream::out | std::fstream::app);
+    newfile<<"\\subsubsection{Heading 3}"<<endl;
+}
+if(str[0]=='<' && str[1]=='h' && str[2]=='4')
+{
+    newfile.open("latex.txt",std::fstream::in | std::fstream::out | std::fstream::app);
+    newfile<<"\\paragraph{Heading 4}"<<endl;
+}
+if(str[0]=='<' && str[1]=='h' && str[2]=='5')
+{
+    newfile.open("latex.txt",std::fstream::in | std::fstream::out | std::fstream::app);
+    newfile<<"\\subparagraph{Heading 5}"<<endl;
+}
+if(str[0]=='<' && str[1]=='h' && str[2]=='6')
+{
+    newfile.open("latex.txt",std::fstream::in | std::fstream::out | std::fstream::app);
+    newfile<<"\\subsection{Heading 6}"<<endl;
+
+}
+if(str[0]=='<' && str[1]=='u' && str[2]=='l')
+{
+     newfile.open("latex.txt",std::fstream::in | std::fstream::out | std::fstream::app);
+     newfile<<"\\begin{itemize}"<<endl;
+
+}
+if(str[0]=='<' && str[1]=='l' && str[2]=='i'  && str[3]=='>')
+{
+     newfile.open("latex.txt",std::fstream::in | std::fstream::out | std::fstream::app);
+     newfile<<"\\item Coffee"<<endl;
+    newfile<<"\\item Tea"<<endl;
+
+     newfile<<"\\item Milk"<<endl;
+
+}
+if(str[0]=='<' && str[1]=='/' && str[2]=='u' )
+{
+     newfile.open("latex.txt",std::fstream::in | std::fstream::out | std::fstream::app);
+     newfile<<"\\end{itemize}"<<endl;
+}
+if(str[0]=='<' && str[1]=='o' && str[2]=='l')
+{
+     newfile.open("latex.txt",std::fstream::in | std::fstream::out | std::fstream::app);
+     newfile<<"\\begin{enumerate}"<<endl;
+
+}
+   if(str[0]=='<' && str[1]=='l' && str[2]=='i'  && str[3]=='>')
+{
+     newfile.open("latex.txt",std::fstream::in | std::fstream::out | std::fstream::app);
+     newfile<<"\\item Coffee"<<endl;
+    newfile<<"\\item Tea"<<endl;
+
+     newfile<<"\\item Milk"<<endl;
+
+}
+if(str[0]=='<' && str[1]=='/' && str[2]=='u' )
+{
+     newfile.open("latex.txt",std::fstream::in | std::fstream::out | std::fstream::app);
+     newfile<<"\\end{enumerate}"<<endl;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+    cout << current->tag << endl;
     if(str[0]=='<' && str[1]=='h' && str[2]=='e')
     {
         headcount++;
@@ -82,7 +172,7 @@ if(str[0]=='<' && str[1]=='h' && str[2]=='t')
     }
     if(str[0]=='<' && str[1]=='/')
     {
-        count++;
+        count1++;
     }
     if(str[0]=='<' && str[1]=='/'  && str[2]=='a')
     {
@@ -192,6 +282,7 @@ void createTreeControl(void)
                         flagForTag = 1 ;
                        // count++;
                         operation(s) ;
+                      //  operation1(s);
                     }
 
                     else
@@ -199,6 +290,7 @@ void createTreeControl(void)
                         char c1 = '!';
                         s = c1 + s ;
                         operation(s) ;
+                       // operation1(s);
                     }
 
                     s.clear() ;
@@ -206,6 +298,7 @@ void createTreeControl(void)
             }
 
             if(flag == '<') operation(str) ;
+           // operation1(str);
         }
     }
 
@@ -296,7 +389,7 @@ void getTagParentsChildrensSiblings(Node *current,string tagStr,int flag)
 
 
 void menu()
-{ cout<<"total tag count "<<count<<endl;
+{ cout<<"total tag count "<<count1<<endl;
 cout<<"total button "<<buttoncount<<endl;
 cout<<"total link "<<linkcount<<endl;
     while(true)
@@ -340,12 +433,12 @@ cout<<"total link "<<linkcount<<endl;
 
 }
 
-struct Node* parser()
+void  parser()
 {
     createLinkList() ;
     createTreeControl() ;
-    // outputTreePreOrder(root) ;
+//     outputTreePreOrder(root) ;
 
     menu() ;
-    return root;
+//    return root;
 }
