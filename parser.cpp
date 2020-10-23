@@ -70,10 +70,10 @@ if(str[0]=='<' && str[1]=='h' && str[2]=='t')
             if(str[0]=='<' && str[1]=='t' && str[2]=='i')
             {
                 newfile.open("latex.txt",std::fstream::in | std::fstream::out | std::fstream::app);
-    newfile<<"\\title{link}"<<endl;
+    newfile<<"\\title"<<getTagAttributeOrString(current,"<title>",'~')<<endl;
 
             }
-            if(str[0]=='<' && str[1]=='b' && str[2]=='o')
+         /*   if(str[0]=='<' && str[1]=='b' && str[2]=='o')
 {newfile.open("latex.txt",std::fstream::in | std::fstream::out | std::fstream::app);
     newfile<<"\\begin{article}"<<endl;
  //   return;
@@ -149,7 +149,7 @@ if(str[0]=='<' && str[1]=='/' && str[2]=='u' )
      newfile.open("latex.txt",std::fstream::in | std::fstream::out | std::fstream::app);
      newfile<<"\\end{enumerate}"<<endl;
 }
-
+*/
 
 
 
