@@ -54,6 +54,51 @@ void insertNode(Node *newNode , int flag)
     }
 }
 
+string latex_attr;
+
+void getTagAttributeOrString(Node *current,string tagStr,char ch)
+{
+    //string *passingPointer = s;
+
+    if(current->tag == tagStr)
+    {
+        string str ;
+        for(int i=0 ; i<10 ; i++)
+        {
+            if((current->children[i])!=NULL )
+            {
+                str = current->children[i]->tag ;
+                if(str[0]==ch)
+                {
+                    str.replace(0,1,"") ;
+
+		    latex_attr = str;
+		    cout << latex_attr << "\t\t" ;
+                }
+            }
+
+            else return;
+        }
+    }
+
+    for(int i=0 ; i<10 ; i++)
+    {
+
+        if((current->children[i])!=NULL)
+        {
+            getTagAttributeOrString(current->children[i] ,tagStr , ch);
+        }
+    }
+
+}
+
+/*string latexAtribute(Node *current,string tagStr,char ch)
+{
+	getTagAttributeOrString(current, tagStr, ch);
+	return latex_attr;
+}*/
+
+
 void operation(string str)
 {
 
@@ -70,7 +115,8 @@ if(str[0]=='<' && str[1]=='h' && str[2]=='t')
             if(str[0]=='<' && str[1]=='t' && str[2]=='i')
             {
                 newfile.open("latex.txt",std::fstream::in | std::fstream::out | std::fstream::app);
-    newfile<<"\\title"<<getTagAttributeOrString(current,"<title>",'~')<<endl;
+		getTagAttributeOrString(current,"<title>",'~');
+    newfile << "\\title" << latex_attr << endl;
 
             }
          /*   if(str[0]=='<' && str[1]=='b' && str[2]=='o')
@@ -305,38 +351,7 @@ void createTreeControl(void)
     else cout << "Can't open file" << endl ;
 
 }
-void getTagAttributeOrString(Node *current,string tagStr,char ch)
-{
 
-    if(current->tag == tagStr)
-    {
-        string str ;
-        for(int i=0 ; i<10 ; i++)
-        {
-            if((current->children[i])!=NULL )
-            {
-                str = current->children[i]->tag ;
-                if(str[0]==ch)
-                {
-                    str.replace(0,1,"") ;
-                    cout << str << "\t\t" ;
-                }
-            }
-
-            else return ;
-        }
-    }
-
-    for(int i=0 ; i<10 ; i++)
-    {
-
-        if((current->children[i])!=NULL)
-        {
-            getTagAttributeOrString(current->children[i] ,tagStr , ch) ;
-        }
-    }
-
-}
 
 void getTagParentsChildrensSiblings(Node *current,string tagStr,int flag)
 {
