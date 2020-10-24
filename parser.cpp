@@ -39,7 +39,12 @@ Node* createNode(string tag)
 
     return temp ;
 }
-
+void lekhalekhi(string s1){
+	fstream fork("latex.txt",std::fstream::app);
+	string s2 = "{";
+	s2+=s1+"}";
+	fork<<s2;
+}
 void insertNode(Node *newNode , int flag)
 {
     newNode->parent = current ;
@@ -74,6 +79,7 @@ void getTagAttributeOrString(Node *current,string tagStr,char ch)
 
 		    latex_attr = str;
 		    cout << latex_attr << "\t\t" ;
+		    lekhalekhi(latex_attr);
                 }
             }
 
@@ -116,10 +122,10 @@ if(str[0]=='<' && str[1]=='h' && str[2]=='t')
             {
                 newfile.open("latex.txt",std::fstream::in | std::fstream::out | std::fstream::app);
 		getTagAttributeOrString(current,"<title>",'~');
-    newfile << "\\title" << latex_attr << endl;
+    newfile << "\\title"<<latex_attr<<endl;
 
             }
-         /*   if(str[0]=='<' && str[1]=='b' && str[2]=='o')
+         /*  if(str[0]=='<' && str[1]=='b' && str[2]=='o')
 {newfile.open("latex.txt",std::fstream::in | std::fstream::out | std::fstream::app);
     newfile<<"\\begin{article}"<<endl;
  //   return;
@@ -127,7 +133,7 @@ if(str[0]=='<' && str[1]=='h' && str[2]=='t')
 if(str[0]=='<' && str[1]=='h' && str[2]=='1')
 {
     newfile.open("latex.txt",std::fstream::in | std::fstream::out | std::fstream::app);
-    newfile<<"\\section{Heading 1}"<<endl;
+    newfile<<"\\section"<<endl;
 }
 if(str[0]=='<' && str[1]=='h' && str[2]=='2')
 {
@@ -196,6 +202,7 @@ if(str[0]=='<' && str[1]=='/' && str[2]=='u' )
      newfile<<"\\end{enumerate}"<<endl;
 }
 */
+newfile<<"\\end{document)"<<endl;
 
 
 
@@ -439,6 +446,7 @@ cout<<"total link "<<linkcount<<endl;
         }
         if(choice==5)
         {
+
             getTagAttributeOrString(root,tagStr,'~');
         }
         if(choice==6)
