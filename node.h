@@ -11,5 +11,6 @@ struct Node
 //struct Node* parser();
 void parser();
 void operation(string str);
+void operation1(string tagstr);
 //void operation1(string str);
 //operation(string str);

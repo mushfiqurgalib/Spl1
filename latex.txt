@@ -1,18 +1,4 @@
 \documentclass{article}
-\title1
-\documentclass{article}
-\title
-\documentclass{article}
-\title
-\documentclass{article}
-\title
-\end{document)
-\documentclass{article}
-\title
-\end{document)
-\documentclass{article}
-\title
-\end{document)
-\documentclass{article}
-\title
-\end{document)
+\begin{document}
+{Heading 5}\subparagraph
+\end{document}
