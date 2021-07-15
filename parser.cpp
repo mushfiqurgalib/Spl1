@@ -34,13 +34,38 @@ Node* createNode(string tag)
 
     temp->tag = tag ;
 
-    for(int i=0 ; i<10 ; i++)
+    for(int i=0 ; i<20 ; i++)
     {
         temp->children[i] = NULL ;
     }
     temp->parent = NULL ;
 
     return temp ;
+}
+void insertNode(Node *newNode , int flag)
+{
+    newNode->parent = current ;
+    for(int i=0 ; i<10 ; i++)
+    {
+        if(current->children[i]==NULL)
+        {
+            current->children[i] = newNode ;
+            if(flag==1) current = newNode ;
+            break ;
+        }
+    }
+}
+void outputTreePreOrder(Node *parent)
+{
+    cout << parent->tag << endl ;
+
+    for(int i=0 ; i<10 ; i++){
+
+        if((parent->children[i])!=NULL)
+        {
+            outputTreePreOrder(parent->children[i]) ;
+        }
+    }
 }
 string latex_attr;
 void operation1(string tagstr)
@@ -264,10 +289,10 @@ void lekhalekhi2()
     fstream fork1("latex.tex",std::fstream::app);
     fork1<<"\\end{document}";
 }
-void insertNode(Node *newNode, int flag)
+/*void insertNode(Node *newNode, int flag)
 {
     newNode->parent = current ;
-    for(int i=0 ; i<10 ; i++)
+    for(int i=0 ; i<20 ; i++)
     {
         if(current->children[i]==NULL)
         {
@@ -277,7 +302,8 @@ void insertNode(Node *newNode, int flag)
             break ;
         }
     }
-}
+}*/
+
 
 
 
@@ -288,7 +314,7 @@ void getTagAttributeOrString(Node *current,string tagStr,char ch)
     if(current->tag == tagStr)
     {
         string str ;
-        for(int i=0 ; i<10 ; i++)
+        for(int i=0 ; i<20 ; i++)
         {
             if((current->children[i])!=NULL )
             {
@@ -423,7 +449,7 @@ void createTreeControl(void)
 {
 
     ifstream iFile ;
-    iFile.open("hello.html") ;
+    iFile.open("b.html") ;
 
     string str = "" ;
     char ch,flag='0' ;
@@ -627,7 +653,7 @@ void  parser()
 {
     createLinkList() ;
     createTreeControl() ;
-//     outputTreePreOrder(root) ;
+    outputTreePreOrder(root) ;
 
     menu() ;
 //    return root;

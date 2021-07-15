@@ -32,6 +32,10 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Linker>
+			<Add library="G:/Spl1-master/wininet.lib" />
+		</Linker>
+		<Unit filename="gethtml.cpp" />
 		<Unit filename="main.cpp" />
 		<Unit filename="node.h" />
 		<Unit filename="parser.cpp" />

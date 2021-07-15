@@ -13,7 +13,9 @@ int main()
       operation("<html> ......... </html>");
 
     //  operation1("<html> ......... </html>");
+ gethtml();
  parser();
+
 
 
 }
