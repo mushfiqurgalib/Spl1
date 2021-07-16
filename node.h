@@ -9,6 +9,7 @@ struct Node
     struct Node *parent,*children[100];
 };
 //struct Node* parser();
+int gethtml();
 void parser();
 void operation1(string tagstr);
 void operation(string str);

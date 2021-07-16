@@ -42,7 +42,7 @@ std::fstream fs_obj;
     totalBytesRead += bytesRead ;
   }
 
-  fs_obj<<total<<"\n--------------------end---------------------\n";
+  fs_obj<<total<<" ";
   fs_obj.close();
   printf( "\n\n END -- %d bytes read\n", bytesRead ) ;
   printf( "\n\n END -- %d TOTAL bytes read\n", totalBytesRead ) ;
