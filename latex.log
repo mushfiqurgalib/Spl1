@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.10.26)  16 JUL 2021 21:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.10.26)  17 JUL 2021 19:29
 entering extended mode
 **./latex.tex
 (latex.tex
@@ -263,14 +263,11 @@ Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 )
-
-Package hyperref Warning: Suppressing link with empty target on input line 7.
-
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.7 ...{/preferences?hl=bn"}{class=gb4}\\{target=_
-                                                  top }\\{id=gb_70 }\\\href ...
+l.7 ...\\\href {/preferences?hl=bn"}{target=_top }
+                                                  {id=gb_70 }\\\href {https:...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
@@ -278,882 +275,37 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 7.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 7.
+! Missing $ inserted.
+<inserted text> 
+                $
+l.7 ...\\\href {/preferences?hl=bn"}{target=_top }
+                                                  {id=gb_70 }\\\href {https:...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.7 ... {/preferences?hl=bn"}{target=_top }{id=gb_
+                                                  70 }\\\href {https://accou...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
 ! Extra }, or forgotten $.
-l.7 ...ferences?hl=bn"}{class=gb4}\\{target=_top }
-                                                  \\{id=gb_70 }\\\href {http...
+l.7 ...references?hl=bn"}{target=_top }{id=gb_70 }
+                                                  \\\href {https://accounts....
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
 you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-
-Package hyperref Warning: Suppressing link with empty target on input line 7.
-
-
-! LaTeX Error: Command \itshape invalid in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.8 \itshape
-            
-Please use the math alphabet \mathit instead of the \itshape command. 
-
-
-! LaTeX Error: Command \itshape invalid in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.9 \itshape
-            
-Please use the math alphabet \mathit instead of the \itshape command. 
-
-
-! LaTeX Error: Command \itshape invalid in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.10 \itshape
-             
-Please use the math alphabet \mathit instead of the \itshape command. 
-
-
-! LaTeX Error: Command \itshape invalid in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.11 \itshape
-             
-Please use the math alphabet \mathit instead of the \itshape command. 
-
-
-! LaTeX Error: Command \itshape invalid in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.12 \itshape
-             
-Please use the math alphabet \mathit instead of the \itshape command. 
-
-
-! LaTeX Error: Command \itshape invalid in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.13 \itshape
-             
-Please use the math alphabet \mathit instead of the \itshape command. 
-
-
-! LaTeX Error: Command \itshape invalid in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.14 \itshape
-             
-Please use the math alphabet \mathit instead of the \itshape command. 
-
 ! Misplaced alignment tab character &.
-l.16 ...self;var h,k=[];function l(a){for(var b;a&
-                                                  &(!a.getAttribute||!(b=a.g...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.16 ...elf;var h,k=[];function l(a){for(var b;a&&
-                                                  (!a.getAttribute||!(b=a.ge...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.16 ...eturn b||h}function m(a){for(var b=null;a&
-                                                  &(!a.getAttribute||!(b=a.g...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.16 ...turn b||h}function m(a){for(var b=null;a&&
-                                                  (!a.getAttribute||!(b=a.ge...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.17 ... n(a,b,c,d,g){var e="";c||-1!==b.search("&
-                                                  ei=")||(e="&ei="+l(d),-1==...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.17 ...){var e="";c||-1!==b.search("&ei=")||(e="&
-                                                  ei="+l(d),-1===b.search("&...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.17 ...h("&ei=")||(e="&ei="+l(d),-1===b.search("&
-                                                  lei=")&&(d=m(d))&&(e+="&le...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.17 ...")||(e="&ei="+l(d),-1===b.search("&lei=")&
-                                                  &(d=m(d))&&(e+="&lei="+d))...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.17 ...)||(e="&ei="+l(d),-1===b.search("&lei=")&&
-                                                  (d=m(d))&&(e+="&lei="+d));...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.17 ...i="+l(d),-1===b.search("&lei=")&&(d=m(d))&
-                                                  &(e+="&lei="+d));d="";!c&&...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.17 ...="+l(d),-1===b.search("&lei=")&&(d=m(d))&&
-                                                  (e+="&lei="+d));d="";!c&&f...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.17 ...),-1===b.search("&lei=")&&(d=m(d))&&(e+="&
-                                                  lei="+d));d="";!c&&f._cshi...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.17 ...lei=")&&(d=m(d))&&(e+="&lei="+d));d="";!c&
-                                                  &f._cshid&&-1===b.search("...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.17 ...ei=")&&(d=m(d))&&(e+="&lei="+d));d="";!c&&
-                                                  f._cshid&&-1===b.search("&...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.17 ...=m(d))&&(e+="&lei="+d));d="";!c&&f._cshid&
-                                                  &-1===b.search("&cshid=")&...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.17 ...m(d))&&(e+="&lei="+d));d="";!c&&f._cshid&&
-                                                  -1===b.search("&cshid=")&&...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.17 ...="+d));d="";!c&&f._cshid&&-1===b.search("&
-                                                  cshid=")&&"slh"!==a&&(d="&...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.17 ..."";!c&&f._cshid&&-1===b.search("&cshid=")&
-                                                  &"slh"!==a&&(d="&cshid="+f...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.17 ...";!c&&f._cshid&&-1===b.search("&cshid=")&&
-                                                  "slh"!==a&&(d="&cshid="+f....
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.17 ...shid&&-1===b.search("&cshid=")&&"slh"!==a&
-                                                  &(d="&cshid="+f._cshid);c=...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.17 ...hid&&-1===b.search("&cshid=")&&"slh"!==a&&
-                                                  (d="&cshid="+f._cshid);c=c...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.17 ...-1===b.search("&cshid=")&&"slh"!==a&&(d="&
-                                                  cshid="+f._cshid);c=c||"/"...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.17 ...._cshid);c=c||"/"+(g||"gen_204")+"?atyp=i&
-                                                  ct="+a+"&cad="+b+e+"&zx="+...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.17 ...c=c||"/"+(g||"gen_204")+"?atyp=i&ct="+a+"&
-                                                  cad="+b+e+"&zx="+Date.now(...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.17 ...|"gen_204")+"?atyp=i&ct="+a+"&cad="+b+e+"&
-                                                  zx="+Date.now()+d;/^http:/...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.17 ...b+e+"&zx="+Date.now()+d;/^http:/i.test(c)&
-                                                  &"https:"===window.locatio...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.17 ...+e+"&zx="+Date.now()+d;/^http:/i.test(c)&&
-                                                  "https:"===window.location...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.17 ...t(c)&&"https:"===window.location.protocol&
-                                                  &(google.ml&&google.ml(Err...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.17 ...(c)&&"https:"===window.location.protocol&&
-                                                  (google.ml&&google.ml(Erro...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.17 ...:"===window.location.protocol&&(google.ml&
-                                                  &google.ml(Error("a"),!1,{...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.17 ..."===window.location.protocol&&(google.ml&&
-                                                  google.ml(Error("a"),!1,{s...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.19 ...bute("data-submitfalse");a="1"==c||"q"==c&
-                                                  &!a.elements.q.value?!0:!1...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.19 ...ute("data-submitfalse");a="1"==c||"q"==c&&
-                                                  !a.elements.q.value?!0:!1}...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.19 ...=c&&!a.elements.q.value?!0:!1}else a=!1;a&
-                                                  &(b.preventDefault(),b.sto...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.19 ...c&&!a.elements.q.value?!0:!1}else a=!1;a&&
-                                                  (b.preventDefault(),b.stop...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.19 ...ck",function(b){var a;a:{for(a=b.target;a&
-                                                  &a!=document.documentEleme...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.19 ...k",function(b){var a;a:{for(a=b.target;a&&
-                                                  a!=document.documentElemen...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.19 ...etAttribute("data-nohref");break a}a=!1}a&
-                                                  &b.preventDefault()},!0);}...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.19 ...tAttribute("data-nohref");break a}a=!1}a&&
-                                                  b.preventDefault()},!0);})...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.19 ...cument.body.onload = function(){window.n &
-                                                  & window.n();if (document....
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.19 ...ument.body.onload = function(){window.n &&
-                                                   window.n();if (document.i...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.20 if (!iesg){document.f&
-                           &document.f.q.focus();document.gbqf&&document.gbq...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.20 if (!iesg){document.f&&
-                            document.f.q.focus();document.gbqf&&document.gbq...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.20 ...ent.f&&document.f.q.focus();document.gbqf&
-                                                  &document.gbqf.q.focus();}
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.20 ...nt.f&&document.f.q.focus();document.gbqf&&
-                                                  document.gbqf.q.focus();}
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.24 var a,b="1";if(document&
-                             &document.getElementById)if("undefined"!=typeof...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.24 var a,b="1";if(document&&
-                              document.getElementById)if("undefined"!=typeof...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.24 ...XObject(d),b="2"}catch(h){}}a=b;if("2"==a&
-                                                  &-1==location.search.index...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.24 ...Object(d),b="2"}catch(h){}}a=b;if("2"==a&&
-                                                  -1==location.search.indexO...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.24 ...;if("2"==a&&-1==location.search.indexOf("&
-                                                  gbv=2")){var f=google.gbvu...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.24 ...e.gbvu,g=document.getElementById("gbv");g&
-                                                  &(g.value=a);f&&window.set...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.24 ....gbvu,g=document.getElementById("gbv");g&&
-                                                  (g.value=a);f&&window.setT...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.24 ...nt.getElementById("gbv");g&&(g.value=a);f&
-                                                  &window.setTimeout(functio...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.24 ...t.getElementById("gbv");g&&(g.value=a);f&&
-                                                  window.setTimeout(function...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.25 ...c.body;a=d.clientWidth;b=d.clientHeight}a&
-                                                  &b&&(a!=google.cdo.width||...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.25 ....body;a=d.clientWidth;b=d.clientHeight}a&&
-                                                  b&&(a!=google.cdo.width||b...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.25 ...ody;a=d.clientWidth;b=d.clientHeight}a&&b&
-                                                  &(a!=google.cdo.width||b!=...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.25 ...dy;a=d.clientWidth;b=d.clientHeight}a&&b&&
-                                                  (a!=google.cdo.width||b!=g...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.25 ...!=google.cdo.width||b!=google.cdo.height)&
-                                                  &google.log("","","/client...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.25 ...=google.cdo.width||b!=google.cdo.height)&&
-                                                  google.log("","","/client_...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.25 ...o.height)&&google.log("","","/client_204?&
-                                                  atyp=i&biw="+a+"&bih="+b+"...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.25 ...t)&&google.log("","","/client_204?&atyp=i&
-                                                  biw="+a+"&bih="+b+"&ei="+g...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.25 ....log("","","/client_204?&atyp=i&biw="+a+"&
-                                                  bih="+b+"&ei="+google.kEI)...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.25 ...,"/client_204?&atyp=i&biw="+a+"&bih="+b+"&
-                                                  ei="+google.kEI);}).call(t...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Undefined control sequence.
-l.25 ...;})();}\\{(function(){var u='/xjs/_/js/k\x
-                                                  3dxjs.hp.en.y4bqQZU371E.O/...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.25 .../xjs/_/js/k\x3dxjs.hp.en.y4bqQZU371E.O/m\x
-                                                  3dsb_he,d/am\x3dAHgCLA/d\x...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.25 ...dxjs.hp.en.y4bqQZU371E.O/m\x3dsb_he,d/am\x
-                                                  3dAHgCLA/d\x3d1/ed\x3d1/rs...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.25 ...4bqQZU371E.O/m\x3dsb_he,d/am\x3dAHgCLA/d\x
-                                                  3d1/ed\x3d1/rs\x3dACT90oFN...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.25 ...1E.O/m\x3dsb_he,d/am\x3dAHgCLA/d\x3d1/ed\x
-                                                  3d1/rs\x3dACT90oFNdiMsyQEp...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.25 ...3dsb_he,d/am\x3dAHgCLA/d\x3d1/ed\x3d1/rs\x
-                                                  3dACT90oFNdiMsyQEpzomiLaDF...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Misplaced alignment tab character &.
-l.27 function n(a){google.timers&
-                                 &google.timers.load&&google.tick&&google.ti...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.27 function n(a){google.timers&&
-                                  google.timers.load&&google.tick&&google.ti...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.27 ...on n(a){google.timers&&google.timers.load&
-                                                  &google.tick&&google.tick(...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.27 ...n n(a){google.timers&&google.timers.load&&
-                                                  google.tick&&google.tick("...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.27 ...e.timers&&google.timers.load&&google.tick&
-                                                  &google.tick("load","xjsls...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.27 ....timers&&google.timers.load&&google.tick&&
-                                                  google.tick("load","xjsls"...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.27 ...";"application/xhtml+xml"===b.contentType&
-                                                  &(c=c.toLowerCase());c=b.c...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.27 ...;"application/xhtml+xml"===b.contentType&&
-                                                  (c=c.toLowerCase());c=b.cr...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.27 ...d 0===g){b=null;var k=e.trustedTypes;if(k&
-                                                  &k.createPolicy){try{b=k.c...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.27 ... 0===g){b=null;var k=e.trustedTypes;if(k&&
-                                                  k.createPolicy){try{b=k.cr...
+l.7 ...{News}{Gmail}{Drive}{Calendar}{Translate}{&
+                                                  #2488;&#2494;&#2480;&#2509...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -1162,86 +314,142 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! You can't use `macro parameter character #' in math mode.
-l.27 ....createPolicy){try{b=k.createPolicy("goog#
-                                                  html",{createHTML:f,create...
+l.7 ...News}{Gmail}{Drive}{Calendar}{Translate}{&#
+                                                  2488;&#2494;&#2480;&#2509;...
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
 If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 ! Misplaced alignment tab character &.
-l.27 ...:f,createScriptURL:f})}catch(p){e.console&
-                                                  &e.console.error(p.message...
+l.7 ...Gmail}{Drive}{Calendar}{Translate}{&#2488;&
+                                                  #2494;&#2480;&#2509;&#2458...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
 up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
+
+! You can't use `macro parameter character #' in math mode.
+l.7 ...mail}{Drive}{Calendar}{Translate}{&#2488;&#
+                                                  2494;&#2480;&#2509;&#2458;...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
 
 ! Misplaced alignment tab character &.
-l.27 ...f,createScriptURL:f})}catch(p){e.console&&
-                                                  e.console.error(p.message)...
+l.7 ...Drive}{Calendar}{Translate}{&#2488;&#2494;&
+                                                  #2480;&#2509;&#2458;&#2503...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
 up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
+
+! You can't use `macro parameter character #' in math mode.
+l.7 ...rive}{Calendar}{Translate}{&#2488;&#2494;&#
+                                                  2480;&#2509;&#2458;&#2503;...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
 
 ! Misplaced alignment tab character &.
-l.27 ...RL(a):a;a=new l(a,h);c.src=a instanceof l&
-                                                  &a.constructor===l?a.g:"ty...
+l.7 ...Calendar}{Translate}{&#2488;&#2494;&#2480;&
+                                                  #2509;&#2458;&#2503;&#2480...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
 up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
+
+! You can't use `macro parameter character #' in math mode.
+l.7 ...alendar}{Translate}{&#2488;&#2494;&#2480;&#
+                                                  2509;&#2458;&#2503;&#2480;...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
 
 ! Misplaced alignment tab character &.
-l.27 ...L(a):a;a=new l(a,h);c.src=a instanceof l&&
-                                                  a.constructor===l?a.g:"typ...
+l.7 ...r}{Translate}{&#2488;&#2494;&#2480;&#2509;&
+                                                  #2458;&#2503;&#2480; &#243...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
 up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
+
+! You can't use `macro parameter character #' in math mode.
+l.7 ...}{Translate}{&#2488;&#2494;&#2480;&#2509;&#
+                                                  2458;&#2503;&#2480; &#2439...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
 
 ! Misplaced alignment tab character &.
-l.27 ...stedResourceUrl";var d;a=(c.ownerDocument&
-                                                  &c.ownerDocument.defaultVi...
+l.7 ...slate}{&#2488;&#2494;&#2480;&#2509;&#2458;&
+                                                  #2503;&#2480; &#2439;&#246...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
 up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
+
+! You can't use `macro parameter character #' in math mode.
+l.7 ...late}{&#2488;&#2494;&#2480;&#2509;&#2458;&#
+                                                  2503;&#2480; &#2439;&#2468...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
 
 ! Misplaced alignment tab character &.
-l.27 ...tedResourceUrl";var d;a=(c.ownerDocument&&
-                                                  c.ownerDocument.defaultVie...
+l.7 ...&#2488;&#2494;&#2480;&#2509;&#2458;&#2503;&
+                                                  #2480; &#2439;&#2468;&#249...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
 up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
+
+! You can't use `macro parameter character #' in math mode.
+l.7 ...#2488;&#2494;&#2480;&#2509;&#2458;&#2503;&#
+                                                  2480; &#2439;&#2468;&#2495...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
 
 ! Misplaced alignment tab character &.
-l.27 ...?a.nonce||a.getAttribute("nonce")||"":"")&
-                                                  &c.setAttribute("nonce",d)...
+l.7 ...#2494;&#2480;&#2509;&#2458;&#2503;&#2480; &
+                                                  #2439;&#2468;&#2495;&#2489...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
 up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
+
+! You can't use `macro parameter character #' in math mode.
+l.7 ...2494;&#2480;&#2509;&#2458;&#2503;&#2480; &#
+                                                  2439;&#2468;&#2495;&#2489;...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
 
 ! Misplaced alignment tab character &.
-l.27 ...a.nonce||a.getAttribute("nonce")||"":"")&&
-                                                  c.setAttribute("nonce",d);...
+l.7 ...#2480;&#2509;&#2458;&#2503;&#2480; &#2439;&
+                                                  #2468;&#2495;&#2489;&#2494...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -1249,26 +457,719 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-! Undefined control sequence.
-l.27 ...nction(){window.google.xjsu='/xjs/_/js/k\x
-                                                  3dxjs.hp.en.y4bqQZU371E.O/...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+! You can't use `macro parameter character #' in math mode.
+l.7 ...2480;&#2509;&#2458;&#2503;&#2480; &#2439;&#
+                                                  2468;&#2495;&#2489;&#2494;...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
 
-! Undefined control sequence.
-l.27 .../xjs/_/js/k\x3dxjs.hp.en.y4bqQZU371E.O/m\x
-                                                  3dsb_he,d/am\x3dAHgCLA/d\x...
+! Misplaced alignment tab character &.
+l.7 ...#2509;&#2458;&#2503;&#2480; &#2439;&#2468;&
+                                                  #2495;&#2489;&#2494;&#2488...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! You can't use `macro parameter character #' in math mode.
+l.7 ...2509;&#2458;&#2503;&#2480; &#2439;&#2468;&#
+                                                  2495;&#2489;&#2494;&#2488;...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Misplaced alignment tab character &.
+l.7 ...#2458;&#2503;&#2480; &#2439;&#2468;&#2495;&
+                                                  #2489;&#2494;&#2488;}{&#24...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! You can't use `macro parameter character #' in math mode.
+l.7 ...2458;&#2503;&#2480; &#2439;&#2468;&#2495;&#
+                                                  2489;&#2494;&#2488;}{&#248...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Misplaced alignment tab character &.
+l.7 ...#2503;&#2480; &#2439;&#2468;&#2495;&#2489;&
+                                                  #2494;&#2488;}{&#2488;&#25...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! You can't use `macro parameter character #' in math mode.
+l.7 ...2503;&#2480; &#2439;&#2468;&#2495;&#2489;&#
+                                                  2494;&#2488;}{&#2488;&#250...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Misplaced alignment tab character &.
+l.7 ...#2480; &#2439;&#2468;&#2495;&#2489;&#2494;&
+                                                  #2488;}{&#2488;&#2503;&#24...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! You can't use `macro parameter character #' in math mode.
+l.7 ...2480; &#2439;&#2468;&#2495;&#2489;&#2494;&#
+                                                  2488;}{&#2488;&#2503;&#246...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Misplaced alignment tab character &.
+l.7 ...2439;&#2468;&#2495;&#2489;&#2494;&#2488;}{&
+                                                  #2488;&#2503;&#2463;&#2495...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! You can't use `macro parameter character #' in math mode.
+l.7 ...439;&#2468;&#2495;&#2489;&#2494;&#2488;}{&#
+                                                  2488;&#2503;&#2463;&#2495;...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Misplaced alignment tab character &.
+l.7 ...2468;&#2495;&#2489;&#2494;&#2488;}{&#2488;&
+                                                  #2503;&#2463;&#2495;&#2434...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! You can't use `macro parameter character #' in math mode.
+l.7 ...468;&#2495;&#2489;&#2494;&#2488;}{&#2488;&#
+                                                  2503;&#2463;&#2495;&#2434;...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Misplaced alignment tab character &.
+l.7 ...2495;&#2489;&#2494;&#2488;}{&#2488;&#2503;&
+                                                  #2463;&#2495;&#2434;&#2488...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! You can't use `macro parameter character #' in math mode.
+l.7 ...495;&#2489;&#2494;&#2488;}{&#2488;&#2503;&#
+                                                  2463;&#2495;&#2434;&#2488;...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Misplaced alignment tab character &.
+l.7 ...2489;&#2494;&#2488;}{&#2488;&#2503;&#2463;&
+                                                  #2495;&#2434;&#2488;}{&#24...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! You can't use `macro parameter character #' in math mode.
+l.7 ...489;&#2494;&#2488;}{&#2488;&#2503;&#2463;&#
+                                                  2495;&#2434;&#2488;}{&#248...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Misplaced alignment tab character &.
+l.7 ...2494;&#2488;}{&#2488;&#2503;&#2463;&#2495;&
+                                                  #2434;&#2488;}{&#2488;&#24...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! You can't use `macro parameter character #' in math mode.
+l.7 ...494;&#2488;}{&#2488;&#2503;&#2463;&#2495;&#
+                                                  2434;&#2488;}{&#2488;&#249...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Misplaced alignment tab character &.
+l.7 ...2488;}{&#2488;&#2503;&#2463;&#2495;&#2434;&
+                                                  #2488;}{&#2488;&#2494;&#24...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! You can't use `macro parameter character #' in math mode.
+l.7 ...488;}{&#2488;&#2503;&#2463;&#2495;&#2434;&#
+                                                  2488;}{&#2488;&#2494;&#243...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Misplaced alignment tab character &.
+l.7 ...2488;&#2503;&#2463;&#2495;&#2434;&#2488;}{&
+                                                  #2488;&#2494;&#2439;&#2472...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! You can't use `macro parameter character #' in math mode.
+l.7 ...488;&#2503;&#2463;&#2495;&#2434;&#2488;}{&#
+                                                  2488;&#2494;&#2439;&#2472;...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Misplaced alignment tab character &.
+l.7 ...2503;&#2463;&#2495;&#2434;&#2488;}{&#2488;&
+                                                  #2494;&#2439;&#2472;-&#243...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! You can't use `macro parameter character #' in math mode.
+l.7 ...503;&#2463;&#2495;&#2434;&#2488;}{&#2488;&#
+                                                  2494;&#2439;&#2472;-&#2439...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Misplaced alignment tab character &.
+l.7 ...2463;&#2495;&#2434;&#2488;}{&#2488;&#2494;&
+                                                  #2439;&#2472;-&#2439;&#247...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! You can't use `macro parameter character #' in math mode.
+l.7 ...463;&#2495;&#2434;&#2488;}{&#2488;&#2494;&#
+                                                  2439;&#2472;-&#2439;&#2472...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Misplaced alignment tab character &.
+l.7 ...2495;&#2434;&#2488;}{&#2488;&#2494;&#2439;&
+                                                  #2472;-&#2439;&#2472; &#24...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! You can't use `macro parameter character #' in math mode.
+l.7 ...495;&#2434;&#2488;}{&#2488;&#2494;&#2439;&#
+                                                  2472;-&#2439;&#2472; &#245...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Misplaced alignment tab character &.
+l.7 ...434;&#2488;}{&#2488;&#2494;&#2439;&#2472;-&
+                                                  #2439;&#2472; &#2453;&#248...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! You can't use `macro parameter character #' in math mode.
+l.7 ...34;&#2488;}{&#2488;&#2494;&#2439;&#2472;-&#
+                                                  2439;&#2472; &#2453;&#2480...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Misplaced alignment tab character &.
+l.7 ...488;}{&#2488;&#2494;&#2439;&#2472;-&#2439;&
+                                                  #2472; &#2453;&#2480;&#249...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! You can't use `macro parameter character #' in math mode.
+l.7 ...88;}{&#2488;&#2494;&#2439;&#2472;-&#2439;&#
+                                                  2472; &#2453;&#2480;&#2497...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Misplaced alignment tab character &.
+l.7 ...2488;&#2494;&#2439;&#2472;-&#2439;&#2472; &
+                                                  #2453;&#2480;&#2497;&#2472...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! You can't use `macro parameter character #' in math mode.
+l.7 ...488;&#2494;&#2439;&#2472;-&#2439;&#2472; &#
+                                                  2453;&#2480;&#2497;&#2472;...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Misplaced alignment tab character &.
+l.7 ...2494;&#2439;&#2472;-&#2439;&#2472; &#2453;&
+                                                  #2480;&#2497;&#2472;}{&#24...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! You can't use `macro parameter character #' in math mode.
+l.7 ...494;&#2439;&#2472;-&#2439;&#2472; &#2453;&#
+                                                  2480;&#2497;&#2472;}{&#244...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Misplaced alignment tab character &.
+l.7 ...2439;&#2472;-&#2439;&#2472; &#2453;&#2480;&
+                                                  #2497;&#2472;}{&#2441;&#24...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! You can't use `macro parameter character #' in math mode.
+l.7 ...439;&#2472;-&#2439;&#2472; &#2453;&#2480;&#
+                                                  2497;&#2472;}{&#2441;&#247...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Misplaced alignment tab character &.
+l.7 ...2472;-&#2439;&#2472; &#2453;&#2480;&#2497;&
+                                                  #2472;}{&#2441;&#2472;&#25...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! You can't use `macro parameter character #' in math mode.
+l.7 ...472;-&#2439;&#2472; &#2453;&#2480;&#2497;&#
+                                                  2472;}{&#2441;&#2472;&#250...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Misplaced alignment tab character &.
+l.7 ...439;&#2472; &#2453;&#2480;&#2497;&#2472;}{&
+                                                  #2441;&#2472;&#2509;&#2472...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! You can't use `macro parameter character #' in math mode.
+l.7 ...39;&#2472; &#2453;&#2480;&#2497;&#2472;}{&#
+                                                  2441;&#2472;&#2509;&#2472;...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Misplaced alignment tab character &.
+l.7 ...472; &#2453;&#2480;&#2497;&#2472;}{&#2441;&
+                                                  #2472;&#2509;&#2472;&#2468...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! You can't use `macro parameter character #' in math mode.
+l.7 ...72; &#2453;&#2480;&#2497;&#2472;}{&#2441;&#
+                                                  2472;&#2509;&#2472;&#2468;...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Misplaced alignment tab character &.
+l.7 ...2453;&#2480;&#2497;&#2472;}{&#2441;&#2472;&
+                                                  #2509;&#2472;&#2468; &#248...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! You can't use `macro parameter character #' in math mode.
+l.7 ...453;&#2480;&#2497;&#2472;}{&#2441;&#2472;&#
+                                                  2509;&#2472;&#2468; &#2488...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Misplaced alignment tab character &.
+l.7 ...2480;&#2497;&#2472;}{&#2441;&#2472;&#2509;&
+                                                  #2472;&#2468; &#2488;&#249...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! You can't use `macro parameter character #' in math mode.
+l.7 ...480;&#2497;&#2472;}{&#2441;&#2472;&#2509;&#
+                                                  2472;&#2468; &#2488;&#2494...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Misplaced alignment tab character &.
+l.7 ...2497;&#2472;}{&#2441;&#2472;&#2509;&#2472;&
+                                                  #2468; &#2488;&#2494;&#248...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! You can't use `macro parameter character #' in math mode.
+l.7 ...497;&#2472;}{&#2441;&#2472;&#2509;&#2472;&#
+                                                  2468; &#2488;&#2494;&#2480...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Misplaced alignment tab character &.
+l.7 ...472;}{&#2441;&#2472;&#2509;&#2472;&#2468; &
+                                                  #2488;&#2494;&#2480;&#2509...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! You can't use `macro parameter character #' in math mode.
+l.7 ...72;}{&#2441;&#2472;&#2509;&#2472;&#2468; &#
+                                                  2488;&#2494;&#2480;&#2509;...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Misplaced alignment tab character &.
+l.7 ...#2441;&#2472;&#2509;&#2472;&#2468; &#2488;&
+                                                  #2494;&#2480;&#2509;&#2458...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! You can't use `macro parameter character #' in math mode.
+l.7 ...2441;&#2472;&#2509;&#2472;&#2468; &#2488;&#
+                                                  2494;&#2480;&#2509;&#2458;...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Misplaced alignment tab character &.
+l.7 ...#2472;&#2509;&#2472;&#2468; &#2488;&#2494;&
+                                                  #2480;&#2509;&#2458;}{Engl...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! You can't use `macro parameter character #' in math mode.
+l.7 ...2472;&#2509;&#2472;&#2468; &#2488;&#2494;&#
+                                                  2480;&#2509;&#2458;}{Engli...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Misplaced alignment tab character &.
+l.7 ...#2509;&#2472;&#2468; &#2488;&#2494;&#2480;&
+                                                  #2509;&#2458;}{English}{Go...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! You can't use `macro parameter character #' in math mode.
+l.7 ...2509;&#2472;&#2468; &#2488;&#2494;&#2480;&#
+                                                  2509;&#2458;}{English}{Goo...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Misplaced alignment tab character &.
+l.7 ...#2472;&#2468; &#2488;&#2494;&#2480;&#2509;&
+                                                  #2458;}{English}{Google &#...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! You can't use `macro parameter character #' in math mode.
+l.7 ...2472;&#2468; &#2488;&#2494;&#2480;&#2509;&#
+                                                  2458;}{English}{Google &#2...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Misplaced alignment tab character &.
+l.7 ...94;&#2480;&#2509;&#2458;}{English}{Google &
+                                                  #2488;&#2480;&#2509;&#2478...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! You can't use `macro parameter character #' in math mode.
+l.7 ...4;&#2480;&#2509;&#2458;}{English}{Google &#
+                                                  2488;&#2480;&#2509;&#2478;...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Misplaced alignment tab character &.
+l.7 ...80;&#2509;&#2458;}{English}{Google &#2488;&
+                                                  #2480;&#2509;&#2478;&#2509...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! You can't use `macro parameter character #' in math mode.
+l.7 ...0;&#2509;&#2458;}{English}{Google &#2488;&#
+                                                  2480;&#2509;&#2478;&#2509;...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Misplaced alignment tab character &.
+l.7 ...09;&#2458;}{English}{Google &#2488;&#2480;&
+                                                  #2509;&#2478;&#2509;&#2474...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! You can't use `macro parameter character #' in math mode.
+l.7 ...9;&#2458;}{English}{Google &#2488;&#2480;&#
+                                                  2509;&#2478;&#2509;&#2474;...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Misplaced alignment tab character &.
+l.7 ...58;}{English}{Google &#2488;&#2480;&#2509;&
+                                                  #2478;&#2509;&#2474;&#2453...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! You can't use `macro parameter character #' in math mode.
+l.7 ...8;}{English}{Google &#2488;&#2480;&#2509;&#
+                                                  2478;&#2509;&#2474;&#2453;...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Misplaced alignment tab character &.
+l.7 ...glish}{Google &#2488;&#2480;&#2509;&#2478;&
+                                                  #2509;&#2474;&#2453;&#2503...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! You can't use `macro parameter character #' in math mode.
+l.7 ...lish}{Google &#2488;&#2480;&#2509;&#2478;&#
+                                                  2509;&#2474;&#2453;&#2503;...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Misplaced alignment tab character &.
+l.7 ...Google &#2488;&#2480;&#2509;&#2478;&#2509;&
+                                                  #2474;&#2453;&#2503; &#248...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! You can't use `macro parameter character #' in math mode.
+l.7 ...oogle &#2488;&#2480;&#2509;&#2478;&#2509;&#
+                                                  2474;&#2453;&#2503; &#2488...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Misplaced alignment tab character &.
+l.7 ...&#2488;&#2480;&#2509;&#2478;&#2509;&#2474;&
+                                                  #2453;&#2503; &#2488;&#247...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! You can't use `macro parameter character #' in math mode.
+l.7 ...#2488;&#2480;&#2509;&#2478;&#2509;&#2474;&#
+                                                  2453;&#2503; &#2488;&#2476...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Misplaced alignment tab character &.
+l.7 ...&#2480;&#2509;&#2478;&#2509;&#2474;&#2453;&
+                                                  #2503; &#2488;&#2476;&#245...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! You can't use `macro parameter character #' in math mode.
+l.7 ...#2480;&#2509;&#2478;&#2509;&#2474;&#2453;&#
+                                                  2503; &#2488;&#2476;&#2453...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Misplaced alignment tab character &.
+l.7 ...#2509;&#2478;&#2509;&#2474;&#2453;&#2503; &
+                                                  #2488;&#2476;&#2453;&#2495...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! You can't use `macro parameter character #' in math mode.
+l.7 ...2509;&#2478;&#2509;&#2474;&#2453;&#2503; &#
+                                                  2488;&#2476;&#2453;&#2495;...
 (That makes 100 errors; please try again.) 
 Here is how much of TeX's memory you used:
- 5178 strings out of 480236
- 81758 string characters out of 2881032
- 392278 words of memory out of 3000000
- 21677 multiletter control sequences out of 15000+200000
- 535755 words of font info for 31 fonts, out of 3000000 for 9000
+ 5175 strings out of 480236
+ 81723 string characters out of 2881032
+ 369273 words of memory out of 3000000
+ 21675 multiletter control sequences out of 15000+200000
+ 535396 words of font info for 30 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,9n,66p,15381b,122s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,2n,66p,19469b,110s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 !  ==> Fatal error occurred, no output PDF file produced!

@@ -14,7 +14,7 @@ using namespace std ;
 string emptyTagList[] = {"<br>", "<hr>", "<img>", "<input>", "<link>", "<meta>", "<source>"} ;
 int flagForEmptyTag = 0 ;
 fstream newfile;
- string tabinitial="\\begin{tabular}\n {c c c }";
+ //string tabinitial="\\begin{tabular}\n {c c c }";
 
 
 Node *root, *current;
@@ -34,7 +34,7 @@ Node* createNode(string tag)
 
     temp->tag = tag ;
 
-    for(int i=0 ; i<20 ; i++)
+    for(int i=0 ; i<40 ; i++)
     {
         temp->children[i] = NULL ;
     }
@@ -45,7 +45,7 @@ Node* createNode(string tag)
 void insertNode(Node *newNode , int flag)
 {
     newNode->parent = current ;
-    for(int i=0 ; i<20 ; i++)
+    for(int i=0 ; i<40 ; i++)
     {
         if(current->children[i]==NULL)
         {
@@ -65,91 +65,91 @@ void operation1(string tag)
  if(tag[0]=='<' && tag[1]=='h' && tag[2]=='2')
     {
         //newfile.open("latex.txt",std::fstream::in | std::fstream::out | std::fstream::app);
-        fstream fork("latex.tex",std::fstream::app);
+        fstream fork("latex.txt",std::fstream::app);
         fork<<"\\subsection*"<<endl;
     }
 if(tag[0]=='<' && tag[1]=='h' && tag[2]=='1')
     {
         //newfile.open("latex.txt",std::fstream::in | std::fstream::out | std::fstream::app);
-          fstream fork("latex.tex",std::fstream::app);
+          fstream fork("latex.txt",std::fstream::app);
         fork<<"\\section*"<<endl;
 
     }
       if(tag[0]=='<' && tag[1]=='a' && tag[2]=='>')
     {
-         fstream fork2("latex.tex",std::fstream::app);
-        fork2<<"\\"<<endl;
+         fstream fork2("latex.txt",std::fstream::app);
+        fork2<<"\\\\"<<endl;
     }
      if(tag[0]=='<' && tag[1]=='s' && tag[2]=='u' && tag[3]=='p')
     {
-        fstream fork("latex.tex",std::fstream::app);
+        fstream fork("latex.txt",std::fstream::app);
         fork<<"\\textsuperscript"<<endl;
 
     }
 
 if(tag[0]=='<' && tag[1]=='h' && tag[2]=='3')
     {
-         fstream fork("latex.tex",std::fstream::app);
+         fstream fork("latex.txt",std::fstream::app);
         fork<<"\\subsubsection*"<<endl;
 
     }
 
     if(tag[0]=='<' && tag[1]=='h' && tag[2]=='4')
     {
-         fstream fork("latex.tex",std::fstream::app);
+         fstream fork("latex.txt",std::fstream::app);
         fork<<"\\paragraph"<<endl;
 
     }
     if(tag[0]=='<' && tag[1]=='h' && tag[2]=='5')
     {
-         fstream fork("latex.tex",std::fstream::app);
+         fstream fork("latex.txt",std::fstream::app);
         fork<<"\\subparagraph"<<endl;
 
     }
 
     if(tag[0]=='<' && tag[1]=='h' && tag[2]=='6')
     {
-         fstream fork("latex.tex",std::fstream::app);
+         fstream fork("latex.txt",std::fstream::app);
         fork<<"\\subsection*"<<endl;
 
     }
 
-    if(tag[0]=='<' && tag[1]=='i')
+    if(tag[0]=='<' && tag[1]=='i' && tag[2]=='>')
     {
-         fstream fork("latex.tex",std::fstream::app);
+         fstream fork("latex.txt",std::fstream::app);
         fork<<"\\itshape"<<endl;
 
     }
     if(tag[0]=='<' && tag[1]=='b' && tag[2]=='>')
     {
-         fstream fork("latex.tex",std::fstream::app);
+         fstream fork("latex.txt",std::fstream::app);
         fork<<"\\bfseries"<<endl;
 
     }
     if(tag[0]=='<' && tag[1]=='e' && tag[2]=='m')
     {
-         fstream fork("latex.tex",std::fstream::app);
+         fstream fork("latex.txt",std::fstream::app);
         fork<<"\\emph"<<endl;
 
     }
 
       if(tag[0]=='<' && tag[1]=='u' && tag[2]=='>')
     {
-         fstream fork("latex.tex",std::fstream::app);
+         fstream fork("latex.txt",std::fstream::app);
         fork<<"\\underline"<<endl;
 
     }
 
      if(tag[0]=='<' && tag[1]=='s' && tag[2]=='u' && tag[3]=='b')
     {
-        fstream fork("latex.tex",std::fstream::app);
+        fstream fork("latex.txt",std::fstream::app);
         fork<<"\\textsubscript"<<endl;
 
     }
     if(tag[0]=='<' && tag[1]=='p' && tag[2]=='>')
     {
         // newfile.open("latex.txt",std::fstream::in | std::fstream::out | std::fstream::app);
-        fstream fork("latex.tex",std::fstream::app);
+        fstream fork("latex.txt",std::fstream::app);
         fork<<"\\\\"<<endl;
 
     }
@@ -260,12 +260,12 @@ void lekhalekhi5(string s1)
     fstream fork4("latex.txt",std::fstream::app);
 
 
-    fork4<<tabinitial+s1+"\\end{tabular}";
+//    fork4<<tabinitial+s1+"\\end{tabular}";
 
 }
 void lekhalekhi4(string s1)
 {
-    fstream fork3("latex.tex",std::fstream::app);
+    fstream fork3("latex.txt",std::fstream::app);
     string s2 = "\\includegraphics";
     int afk=s1.size();
     s1.replace(afk-1,1,"}");
@@ -287,26 +287,28 @@ void lekhalekhi3(string s1)
     int axx;
     axx=s1.size();
     //cout<<axx;
-    fstream fork2("latex.tex",std::fstream::app);
+    fstream fork2("latex.txt",std::fstream::app);
     string s2="\\";
+    string s4="\\\\";
     s1.replace(5,1,"{");
     s1.replace(4,1," ");
     s1.replace(axx-1,1,"");
     // s1.replace(s1.end()-2,1,"");
    string  s3="";//"{This is a link}";
-    s2+=s1+'}'+s3;
+    s2+=s4+s1+'}'+s3;
     fork2<<s2;
+    //s1.erase();
 }
 void lekhalekhi6(string s1)
 {
     int axx1;
     axx1=s1.size();
     //cout<<axx;
-    fstream fork6("latex.tex",std::fstream::app);
-    string s2="\\";
-    s1.replace(0,1,"");
-    s1.replace(1,1,"{");
-    s1.replace(axx1-2,1,"}");
+    fstream fork6("latex.txt",std::fstream::app);
+    string s2="";
+    s1.replace(0,1,"{");
+    //s1.replace(1,1,"{");
+   // s1.replace(axx1-1,1,"}");
     //s1.replace(axx-1,1,"");
     // s1.replace(s1.end()-2,1,"");
   // string  s3="{This is a link}";
@@ -316,17 +318,24 @@ void lekhalekhi6(string s1)
 
 void lekhalekhi(string s1)
 {
-    fstream fork("latex.tex",std::fstream::app);
+    fstream fork("latex.txt",std::fstream::app);
     string s2 = "{";
     s2+=s1+"}";
     fork<<s2;
-    fork<<"\\\\";
+   // fork<<"\\\\";
+
+}
+void lekhalekhi8(string s1)
+{
+    fstream fork("latex.txt",std::fstream::app);
+
+    s1.erase();
 
 }
 
 void lekhalekhi7(string s1)
 {
-    fstream fork("latex.tex",std::fstream::app);
+    fstream fork("latex.txt",std::fstream::app);
     string s2 = "{";
     s2+=s1+"}";
     fork<<s2;
@@ -334,7 +343,7 @@ void lekhalekhi7(string s1)
 }
 void lekhalekhi2()
 {
-    fstream fork1("latex.tex",std::fstream::app);
+    fstream fork1("latex.txt",std::fstream::app);
     fork1<<"\\end{document}";
 }
 /*void insertNode(Node *newNode, int flag)
@@ -362,7 +371,7 @@ void getTagAttributeOrString(Node *current,string tagStr,char ch)
     if(current->tag == tagStr)
     {
         string str ;
-        for(int i=0 ; i<20 ; i++)
+        for(int i=0 ; i<40 ; i++)
         {
             if((current->children[i])!=NULL )
             {
@@ -375,16 +384,24 @@ void getTagAttributeOrString(Node *current,string tagStr,char ch)
 
                     latex_attr = str;
                    // cout << latex_attr << "\t\t" ;
-                    if(tagStr[0]=='<' && tagStr[1]=='a' && tagStr[2]=='>' && latex_attr_spcl[0]=='!' && latex_attr_spcl[1]=='h')
+
+                     if(tagStr[0]=='<' && tagStr[1]=='a' && tagStr[2]=='>' && latex_attr_spcl[0]=='!' && latex_attr_spcl[1]=='h')
                     {
                         //operation1(str);
                         lekhalekhi3(latex_attr);
+                       // cout<<latex_attr<<"wow";
+                        string ass=latex_attr.erase();
+                        //cout<<ass<<"delete";
+
+                        //lekhalekhi8(ass);
+
                     }
-                  /*  if(tagStr[0]=='<' && tagStr[1]=='a' && tagStr[2]=='>' && latex_attr_spcl[0]=='~')
+                    else if(tagStr[0]=='<' && tagStr[1]=='a' && tagStr[2]=='>' && latex_attr_spcl[0]=='~')
                     {
                         //operation1(str);
+                     //   cout<<"Here it is";
                         lekhalekhi6(latex_attr_spcl);
-                    }*/
+                    }
                     else if(tagStr[0]=='<' && tagStr[1]=='i' && tagStr[2]=='m')
                     {
                         lekhalekhi4(latex_attr);
@@ -393,7 +410,21 @@ void getTagAttributeOrString(Node *current,string tagStr,char ch)
                     {
                         lekhalekhi7(latex_attr);
                     }
+                    else if(tagStr[0]=='<' && tagStr[1]=='a' && tagStr[2]=='>' && latex_attr_spcl[0]=='!' && latex_attr_spcl[1]=='c')
+                    {
+                        //operation1(str);
+                        lekhalekhi8(latex_attr);
+                    }
 
+                    else if(tagStr[0]=='<' && tagStr[1]=='s' && tagStr[2]=='c')
+                    {
+                        lekhalekhi8(latex_attr);
+                    }
+
+                     else if(tagStr[0]=='<' && tagStr[1]=='s' && tagStr[2]=='t')
+                    {
+                        lekhalekhi8(latex_attr);
+                    }
                     else if(tagStr[0]=='<' && tagStr[1]=='t' && tagStr[2]=='d')
                     {
                         lekhalekhi5(latex_attr);
@@ -412,7 +443,7 @@ void getTagAttributeOrString(Node *current,string tagStr,char ch)
         }
     }
 
-    for(int i=0 ; i<20 ; i++)
+    for(int i=0 ; i<40 ; i++)
     {
 
         if((current->children[i])!=NULL)
@@ -441,7 +472,7 @@ void operation(string str)
     if(str[0]=='<' && str[1]=='h' && str[2]=='t')
     {
 
-        newfile.open("latex.tex",std::fstream::in | std::fstream::out | std::fstream::app);
+        newfile.open("latex.txt",std::fstream::in | std::fstream::out | std::fstream::app);
         newfile<<"\\documentclass{article}"<<endl;
         newfile<<"\\usepackage{hyperref}"<<endl;
         newfile<<"\\usepackage{graphicx}"<<endl;
@@ -618,7 +649,7 @@ void getTagParentsChildrensSiblings(Node *current,string tagStr,int flag)
 
         else if(flag==2)
         {
-            for(int i=0 ; i<10 && current->children[i]!=NULL ; i++)
+            for(int i=0 ; i<20 && current->children[i]!=NULL ; i++)
             {
                 string str = current->children[i]->tag ;
                 if(str[0]!='~' && str[0]!='!')
@@ -631,7 +662,7 @@ void getTagParentsChildrensSiblings(Node *current,string tagStr,int flag)
         else if(flag==3)
         {
 
-            for(int i=0 ; i<10 && current->parent->children[i]!=NULL ; i++)
+            for(int i=0 ; i<20 && current->parent->children[i]!=NULL ; i++)
             {
                 string str = current->parent->children[i]->tag ;
                 if(str[0]!='~' && str[0]!='!')
@@ -642,7 +673,7 @@ void getTagParentsChildrensSiblings(Node *current,string tagStr,int flag)
         }
     }
 
-    for(int i=0 ; i<10 ; i++)
+    for(int i=0 ; i<40 ; i++)
     {
 
         if((current->children[i])!=NULL)
@@ -692,7 +723,7 @@ void menu()
         //if(choice == 4);
         if(choice==4)
         {
-            //getTagAttributeOrString(root,tagStr,'!');
+            getTagAttributeOrString(root,tagStr,'!');
         }
         if(choice==5)
         {
@@ -700,7 +731,7 @@ void menu()
 
             operation1(tagStr);
 
-           // getTagAttributeOrString(root,tagStr,'~');
+          // getTagAttributeOrString(root,tagStr,'~');
 
         }
 
@@ -714,17 +745,27 @@ void outputTreePreOrder(Node *parent)
     string tag=parent->tag;
     if(tag=="<a>")
     {
+        // operation1(tag);
         getTagAttributeOrString(root,tag,'!');
 
           getTagAttributeOrString(root,tag,'~');
 
+    }
+
+    else if(tag=="<script>")
+    {
+        getTagAttributeOrString(root,tag,'~');
+    }
+    else if(tag=="<style>")
+    {
+        getTagAttributeOrString(root,tag,'~');
     }
     else{
     //cout<<tag<<endl;
     operation1(tag);
 
           getTagAttributeOrString(root,parent->tag,'~');}
-    for(int i=0 ; i<20 ; i++){
+    for(int i=0 ; i<40 ; i++){
 
         if((parent->children[i])!=NULL)
         {
