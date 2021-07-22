@@ -1,7 +1,3 @@
-/*#include<stdio.h>
-#include"node.h"
-#include<string.h>*/
-
 #include"node.h"
 using namespace std;
 
@@ -15,7 +11,4 @@ int main()
     //  operation1("<html> ......... </html>");
  gethtml();
  parser();
-
-
-
 }

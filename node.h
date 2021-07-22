@@ -6,7 +6,14 @@ using namespace std;
 struct Node
 {
     string tag;
-    struct Node *parent,*children[100];
+    bool isprint1;
+
+   Node *parent,*children[100];
+
+   Node (){
+
+
+           isprint1=false;}
 };
 //struct Node* parser();
 int gethtml();

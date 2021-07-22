@@ -14,7 +14,7 @@ int gethtml()
 {
 std::fstream fs_obj;
   fs_obj.open("b.html",ios::out );
-
+    cout<<"Enter website name "<<endl;
   string ap;
   cin>>ap;
   char * cstr = new char [ap.length()+1];
