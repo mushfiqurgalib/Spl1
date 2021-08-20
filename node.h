@@ -8,7 +8,7 @@ struct Node
     string tag;
     bool isprint1;
 
-   Node *parent,*children[100];
+   Node *parent,*children[10];
 
    Node (){
 

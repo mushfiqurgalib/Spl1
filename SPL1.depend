@@ -23,17 +23,17 @@
 1626709035 source:g:\spl1-master\main.cpp
 	"node.h"
 
-1626784937 g:\spl1-master\node.h
+1629345836 g:\spl1-master\node.h
 	<bits/stdc++.h>
 	<string.h>
 
-1626971922 source:g:\spl1-master\parser.cpp
+1629386941 source:g:\spl1-master\parser.cpp
 	<fstream>
 	<string>
 	<map>
 	"node.h"
 
-1626971156 source:g:\spl1-master\gethtml.cpp
+1629373824 source:g:\spl1-master\gethtml.cpp
 	"node.h"
 	<windows.h>
 	<wininet.h>

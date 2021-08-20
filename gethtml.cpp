@@ -22,7 +22,9 @@ std::fstream fs_obj;
 
   HINTERNET hInternet = InternetOpenA("InetURL/1.0", INTERNET_OPEN_TYPE_PRECONFIG, NULL, NULL, 0 );
 
-  HINTERNET hConnection = InternetConnectA( hInternet, cstr, 80, " "," ", INTERNET_SERVICE_HTTP, 0, 0 ); //enter url here
+
+  HINTERNET hConnection = InternetConnectA( hInternet, cstr, 80, "","", INTERNET_SERVICE_HTTP, 0, 0 ); //enter url here
+
 
   HINTERNET hData = HttpOpenRequestA( hConnection, "GET", "/", NULL, NULL, NULL, INTERNET_FLAG_KEEP_CONNECTION, 0 );
 

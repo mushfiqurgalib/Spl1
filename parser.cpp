@@ -35,7 +35,7 @@ Node* createNode(string tag)
 
     temp->tag = tag ;
 
-    for(int i=0 ; i<40 ; i++)
+    for(int i=0 ; i<10 ; i++)
     {
         temp->children[i] = NULL ;
     }
@@ -46,7 +46,7 @@ Node* createNode(string tag)
 void insertNode(Node *newNode, int flag)
 {
     newNode->parent = current ;
-    for(int i=0 ; i<40 ; i++)
+    for(int i=0 ; i<10 ; i++)
     {
         if(current->children[i]==NULL)
         {
@@ -362,7 +362,7 @@ void getTagAttributeOrString(Node *current,string tagStr,char ch)
     if(current->tag == tagStr)
     {
         string str ;
-        for(int i=0 ; i<40 ; i++)
+        for(int i=0 ; i<10 ; i++)
         {
             if((current->children[i])!=NULL )
             {
@@ -477,7 +477,7 @@ void getTagAttributeOrString(Node *current,string tagStr,char ch)
         }
     }
 
-    for(int i=0 ; i<40 ; i++)
+    for(int i=0 ; i<10 ; i++)
     {
 
         if((current->children[i])!=NULL)
@@ -683,7 +683,7 @@ void getTagParentsChildrensSiblings(Node *current,string tagStr,int flag)
 
         else if(flag==2)
         {
-            for(int i=0 ; i<40 && current->children[i]!=NULL ; i++)
+            for(int i=0 ; i<10 && current->children[i]!=NULL ; i++)
             {
                 string str = current->children[i]->tag ;
                 if(str[0]!='~' && str[0]!='!')
@@ -696,7 +696,7 @@ void getTagParentsChildrensSiblings(Node *current,string tagStr,int flag)
         else if(flag==3)
         {
 
-            for(int i=0 ; i<40 && current->parent->children[i]!=NULL ; i++)
+            for(int i=0 ; i<10 && current->parent->children[i]!=NULL ; i++)
             {
                 string str = current->parent->children[i]->tag ;
                 if(str[0]!='~' && str[0]!='!')
@@ -707,7 +707,7 @@ void getTagParentsChildrensSiblings(Node *current,string tagStr,int flag)
         }
     }
 
-    for(int i=0 ; i<40 ; i++)
+    for(int i=0 ; i<10 ; i++)
     {
 
         if((current->children[i])!=NULL)
@@ -930,6 +930,12 @@ void outputTreePreOrder(Node *parent,string &fileprint)
         fileprint+="\\textsuperscript";
 
     }
+     else if(tag=="<div>")
+    {
+
+        fileprint+="\\\\";
+
+    }
     else
     {
         if(tag.substr(1,4)=="href")
@@ -940,7 +946,7 @@ void outputTreePreOrder(Node *parent,string &fileprint)
             //cout<<axx;
             // fstream fork2("latex.txt",std::fstream::app);
             fileprint+="\\";
-            fileprint+="\\\\";
+          //  fileprint+="\\\\";
             tag.replace(0,1,"");
             tag.replace(4,1,"{");
             tag.replace(5,1,"");
@@ -991,7 +997,7 @@ void outputTreePreOrder(Node *parent,string &fileprint)
 
     // getTagAttributeOrString(root,parent->tag,'~');
 
-    for(int i=0 ; i<40 ; i++)
+    for(int i=0 ; i<10 ; i++)
     {
 
         if((parent->children[i])!=NULL)
@@ -1010,7 +1016,7 @@ mp.insert({"!sc",4});
 mp.insert({"!st",5});
 mp.insert({"~&#",1});
 mp.insert({"<no",1});
-mp.insert({"<di",1});
+//mp.insert({"<di",1});
 mp.insert({"!bg",1});
 mp.insert({"!it",1});
 mp.insert({"!la",1});
@@ -1043,7 +1049,6 @@ mp.insert({"!si",1});
 mp.insert({"!&#",1});
 mp.insert({"!sb",1});
 mp.insert({"~&c",1});
-mp.insert({"~Go",1});
 /*mp.insert({"<b>",6});
 mp.insert({"<h1>",7});
 mp.insert({"<h2>",1});
@@ -1061,9 +1066,10 @@ mp.insert({"<!Doctypehtml>",1});*/
     createTreeControl() ;
     string s;
     outputTreePreOrder(root,s) ;
-    fstream fork("latex1.tex",std::fstream::app);
+    fstream fork("latex1.txt",std::fstream::app);
     fork<<s;
     fork<<endl;
+     fork<<endl;
     fork<<"\\end{document}";
 
 
