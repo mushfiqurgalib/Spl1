@@ -334,8 +334,8 @@ void lekhalekhi7(string s1)
 }
 void lekhalekhi2()
 {
-    fstream fork("latex.txt",std::fstream::app);
-    fork<<"\\end{document}";
+   // fstream fork("latex.txt",std::fstream::app);
+    //fork<<"\\end{document}";
 }
 /*void insertNode(Node *newNode, int flag)
 {
@@ -506,12 +506,12 @@ void operation(string str)
     if(str[0]=='<' && str[1]=='h' && str[2]=='t')
     {
 
-        newfile.open("latex.txt",std::fstream::in | std::fstream::out | std::fstream::app);
+       /* newfile.open("latex.txt",std::fstream::in | std::fstream::out | std::fstream::app);
         newfile<<"\\documentclass{article}"<<endl;
         newfile<<"\\usepackage{hyperref}"<<endl;
         newfile<<"\\usepackage{graphicx}"<<endl;
         newfile<<"\\usepackage{tabularx}"<<endl;
-        newfile<<"\\begin{document}"<<endl;
+        newfile<<"\\begin{document}"<<endl;*/
         return;
     }
     // cout << current->tag << endl;
@@ -859,7 +859,7 @@ void outputTreePreOrder(Node *parent,string &fileprint)
 
     else if(tag=="<b>")
     {
-        fileprint+="\\bfseries" ;
+        fileprint+="\\textbf" ;
     }
     else if(tag=="<h1>")
     {
@@ -924,6 +924,8 @@ void outputTreePreOrder(Node *parent,string &fileprint)
         fileprint+="\\textsubscript";
 
     }
+
+
     else if(tag=="<sup>")
     {
 
@@ -1016,6 +1018,7 @@ mp.insert({"!sc",4});
 mp.insert({"!st",5});
 mp.insert({"~&#",1});
 mp.insert({"<no",1});
+mp.insert({"~Go",1});
 //mp.insert({"<di",1});
 mp.insert({"!bg",1});
 mp.insert({"!it",1});
@@ -1066,7 +1069,7 @@ mp.insert({"<!Doctypehtml>",1});*/
     createTreeControl() ;
     string s;
     outputTreePreOrder(root,s) ;
-    fstream fork("latex1.txt",std::fstream::app);
+    fstream fork("latex1.tex",std::fstream::app);
     fork<<s;
     fork<<endl;
      fork<<endl;
