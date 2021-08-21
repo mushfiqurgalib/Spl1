@@ -49,7 +49,7 @@ std::fstream fs_obj;
   printf( "\n\n END -- %d bytes read\n", bytesRead ) ;
   printf( "\n\n END -- %d TOTAL bytes read\n", totalBytesRead ) ;
 
-  cout<<endl<<total<<endl; //it will save source code to (temp.txt) file
+  cout<<endl<<total<<endl; //it will save source code to (b.html) file
   InternetCloseHandle( hData ) ;
   InternetCloseHandle( hConnection ) ;
   InternetCloseHandle( hInternet ) ;
