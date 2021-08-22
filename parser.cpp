@@ -575,7 +575,7 @@ void createTreeControl(void)
 {
 
     ifstream iFile ;
-    iFile.open("b.html") ;
+    iFile.open("hello.html") ;
 
     string str = "" ;
     char ch,flag='0' ;
@@ -829,6 +829,10 @@ void outputTreePreOrder(Node *parent,string &fileprint)
     {
         tag.erase() ;
     }
+    else if(tag=="<link>")
+    {
+        tag.erase() ;
+    }
     else if(tag=="<script>")
     {
         return;
@@ -944,6 +948,19 @@ void outputTreePreOrder(Node *parent,string &fileprint)
         fileprint+="\\textsuperscript";
 
     }
+  else if(tag.substr(1,3)=="rel")
+        {
+            int axx1;
+            for(int i=0;i<5;i++)
+            {
+            tag.replace(0,1,"");}
+            tag.replace(0,1,"{");
+             axx1=tag.size();
+            tag.replace(axx1-2,1,"}");
+            string s4=tag;
+            fileprint+=s4;
+        }
+
 //convert division tag
      else if(tag=="<div>")
     {
@@ -975,6 +992,7 @@ void outputTreePreOrder(Node *parent,string &fileprint)
            // fileprint+=s2;
 
         }
+
 
          else if(mp[(tag.substr(0,3))]!=0)
     {
@@ -1084,7 +1102,7 @@ mp.insert({"<!Doctypehtml>",1});*/
     createTreeControl() ;
     string s;
     outputTreePreOrder(root,s) ;
-    fstream fork("latex1.tex",std::fstream::app);
+    fstream fork("latex.txt",std::fstream::app);
     fork<<s;
     fork<<endl;
      fork<<endl;
