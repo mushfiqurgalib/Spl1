@@ -575,7 +575,7 @@ void createTreeControl(void)
 {
 
     ifstream iFile ;
-    iFile.open("hello.html") ;
+    iFile.open("b.html") ;
 
     string str = "" ;
     char ch,flag='0' ;
@@ -724,7 +724,7 @@ void menu()
 {
     cout<<"total tag count "<<count1<<endl;
     cout<<"total button "<<buttoncount<<endl;
-    cout<<"total column "<<colcount<<endl;
+   // cout<<"total column "<<colcount<<endl;
     cout<<"total link "<<linkcount<<endl;
     while(true)
     {
@@ -732,7 +732,7 @@ void menu()
 
 
 
-        cout << "\n1.tag's parent\n2.tag's children\n3. tag's sibilings \n4.To get latex part of empty html tags\n5.To get latex part of other tag's String \n6.exit \n" ;
+        cout << "\n1.tag's parent\n2.tag's children\n3. tag's sibilings \n6.exit \n" ;
         cin >> choice ;
         if(choice==6)
         {
@@ -1102,7 +1102,7 @@ mp.insert({"<!Doctypehtml>",1});*/
     createTreeControl() ;
     string s;
     outputTreePreOrder(root,s) ;
-    fstream fork("latex.txt",std::fstream::app);
+    fstream fork("latex.tex",std::fstream::app);
     fork<<s;
     fork<<endl;
      fork<<endl;
