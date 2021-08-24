@@ -5,8 +5,8 @@
 #include"node.h"
 //
 using namespace std ;
-
-
+int cnt;
+int htmlcounter;
 /*struct Node
 {
     string tag ;
@@ -31,11 +31,12 @@ void createLinkList()
 Node* createNode(string tag)
 {
 
+
     Node *temp = new Node ;
 
     temp->tag = tag ;
 
-    for(int i=0 ; i<10 ; i++)
+    for(int i=0 ; i<15 ; i++)
     {
         temp->children[i] = NULL ;
     }
@@ -46,7 +47,7 @@ Node* createNode(string tag)
 void insertNode(Node *newNode, int flag)
 {
     newNode->parent = current ;
-    for(int i=0 ; i<10 ; i++)
+    for(int i=0 ; i<15 ; i++)
     {
         if(current->children[i]==NULL)
         {
@@ -363,7 +364,7 @@ void getTagAttributeOrString(Node *current,string tagStr,char ch)
     if(current->tag == tagStr)
     {
         string str ;
-        for(int i=0 ; i<10 ; i++)
+        for(int i=0 ; i<15 ; i++)
         {
             if((current->children[i])!=NULL )
             {
@@ -478,7 +479,7 @@ void getTagAttributeOrString(Node *current,string tagStr,char ch)
         }
     }
 
-    for(int i=0 ; i<10 ; i++)
+    for(int i=0 ; i<15 ; i++)
     {
 
         if((current->children[i])!=NULL)
@@ -504,7 +505,7 @@ void operation(string str)
 
 
 
-    if(str[0]=='<' && str[1]=='h' && str[2]=='t')
+    if(str[0]=='<' && str[1]=='h' && str[2]=='t' )
     {
 
        /* newfile.open("latex.txt",std::fstream::in | std::fstream::out | std::fstream::app);
@@ -598,6 +599,7 @@ void createTreeControl(void)
         current = root ;
 
 
+
         while(current!=NULL)
         {
             if(flag == '0')
@@ -662,6 +664,7 @@ void createTreeControl(void)
                 operation(str) ;
             // operation1(str);
         }
+
     }
 
     else
@@ -684,7 +687,7 @@ void getTagParentsChildrensSiblings(Node *current,string tagStr,int flag)
 
         else if(flag==2)
         {
-            for(int i=0 ; i<10 && current->children[i]!=NULL ; i++)
+            for(int i=0 ; i<15 && current->children[i]!=NULL ; i++)
             {
                 string str = current->children[i]->tag ;
                 if(str[0]!='~' && str[0]!='!')
@@ -697,7 +700,7 @@ void getTagParentsChildrensSiblings(Node *current,string tagStr,int flag)
         else if(flag==3)
         {
 
-            for(int i=0 ; i<10 && current->parent->children[i]!=NULL ; i++)
+            for(int i=0 ; i<15 && current->parent->children[i]!=NULL ; i++)
             {
                 string str = current->parent->children[i]->tag ;
                 if(str[0]!='~' && str[0]!='!')
@@ -708,7 +711,7 @@ void getTagParentsChildrensSiblings(Node *current,string tagStr,int flag)
         }
     }
 
-    for(int i=0 ; i<10 ; i++)
+    for(int i=0 ; i<15 ; i++)
     {
 
         if((current->children[i])!=NULL)
@@ -847,6 +850,7 @@ void outputTreePreOrder(Node *parent,string &fileprint)
     }
     else if(tag=="<meta>")
     {
+
         return;
     }
 
@@ -1032,7 +1036,7 @@ void outputTreePreOrder(Node *parent,string &fileprint)
 
     // getTagAttributeOrString(root,parent->tag,'~');
 
-    for(int i=0 ; i<10 ; i++)
+    for(int i=0 ; i<15 ; i++)
     {
 
         if((parent->children[i])!=NULL)
