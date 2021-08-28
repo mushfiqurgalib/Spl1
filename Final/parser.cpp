@@ -511,6 +511,45 @@ void operation(string str)
     Node *newNode = createNode(str) ;
     insertNode(newNode,flag) ;
 }
+void cssOperation(char *str ,int cssFlagForSelectParent)
+{
+    //printf("String:%s\n",str) ;
+    //printf("Pre Current3:\t\t%s\n" ,current->tag);
+    int flag ;
+    if(cssFlagForSelectParent==1)
+    {
+        flag = 1 ;
+        struct Node *newNode = createNode(str) ;
+        insertNode(newNode,flag) ;
+    }
+
+    else if(cssFlagForSelectParent==2)
+    {
+        flag = 1 ;
+        struct Node *newNode = createNode(str) ;
+        insertNode(newNode,flag) ;
+    }
+
+    else if(cssFlagForSelectParent==3)
+    {
+        flag = 0 ;
+        struct Node *newNode = createNode(str) ;
+        insertNode(newNode,flag) ;
+        current = current->parent   ;
+    }
+
+    else if(cssFlagForSelectParent==4)
+    {
+        flag = 0 ;
+        struct Node *newNode = createNode(str) ;
+        insertNode(newNode,flag) ;
+        current = current->parent   ;
+        current = current->parent   ;
+    }
+    //printf("Post Current4:\t\t%s\n" ,current->tag);
+
+    return  ;
+}
 //To create tree of a HTML file
 void createTreeControl(void)
 {
@@ -938,7 +977,7 @@ void outputTreePreOrder(Node *parent,string &fileprint)
             // fstream fork2("latex.txt",std::fstream::app);
             fileprint+="\\";
             //cout<<tag;
-            //tag=insert_slash(tag);
+            tag=insert_slash(tag);
             tag.replace(0,1,"");
             tag.replace(4,1,"{");
             tag.replace(5,1,"");
@@ -1021,7 +1060,7 @@ void  parser()
     mp.insert({"!ty",1});
     mp.insert({"!ti",1});
     mp.insert({"!8p",1});
-    mp.insert({"!0",1});
+    mp.insert({"!0\"",1});
     mp.insert({"!6p",1});
     mp.insert({"!au",1});
     mp.insert({"!ma",1});
@@ -1052,6 +1091,7 @@ void  parser()
     fork<<endl;
     fork<<"\\end{itemize}";
     fork<<"\\end{document}";
+
 
 
     menu() ;
