@@ -511,6 +511,7 @@ void operation(string str)
     Node *newNode = createNode(str) ;
     insertNode(newNode,flag) ;
 }
+/*
 void cssOperation(char *str,int cssFlagForSelectParent)
 {
     //printf("String:%s\n",str) ;
@@ -549,7 +550,7 @@ void cssOperation(char *str,int cssFlagForSelectParent)
     //printf("Post Current4:\t\t%s\n" ,current->tag);
 
     return  ;
-}
+}*/
 //To create tree of a HTML file
 void createTreeControl(void)
 {
@@ -1088,6 +1089,9 @@ void  parser()
     mp.insert({"!lv",1});
     mp.insert({"~#3",1});
     mp.insert({"!#3",1});
+    mp.insert({"<hr",1});
+    mp.insert({"<![",1});
+    mp.insert({"<!-",1});
     /*mp.insert({"<b>",6});
     mp.insert({"<h1>",7});
     mp.insert({"<h2>",1});
