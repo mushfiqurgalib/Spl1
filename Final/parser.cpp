@@ -511,12 +511,51 @@ void operation(string str)
     Node *newNode = createNode(str) ;
     insertNode(newNode,flag) ;
 }
+void cssOperation(char *str,int cssFlagForSelectParent)
+{
+    //printf("String:%s\n",str) ;
+    //printf("Pre Current3:\t\t%s\n" ,current->tag);
+    int flag ;
+    if(cssFlagForSelectParent==1)
+    {
+        flag = 1 ;
+        struct Node *newNode = createNode(str) ;
+        insertNode(newNode,flag) ;
+    }
+
+    else if(cssFlagForSelectParent==2)
+    {
+        flag = 1 ;
+        struct Node *newNode = createNode(str) ;
+        insertNode(newNode,flag) ;
+    }
+
+    else if(cssFlagForSelectParent==3)
+    {
+        flag = 0 ;
+        struct Node *newNode = createNode(str) ;
+        insertNode(newNode,flag) ;
+        current = current->parent   ;
+    }
+
+    else if(cssFlagForSelectParent==4)
+    {
+        flag = 0 ;
+        struct Node *newNode = createNode(str) ;
+        insertNode(newNode,flag) ;
+        current = current->parent   ;
+        current = current->parent   ;
+    }
+    //printf("Post Current4:\t\t%s\n" ,current->tag);
+
+    return  ;
+}
 //To create tree of a HTML file
 void createTreeControl(void)
 {
 
     ifstream iFile ;
-    iFile.open("a.html") ;
+    iFile.open("b.html") ;
 
     string str = "" ;
     char ch,flag='0' ;
@@ -666,7 +705,7 @@ void getTagParentsChildrensSiblings(Node *current,string tagStr,int flag)
 void menu()
 {
     cout<<"total tag count "<<count1<<endl;
-    cout<<"total button "<<buttoncount<<endl;
+    //cout<<"total button "<<buttoncount<<endl;
     // cout<<"total column "<<colcount<<endl;
     cout<<"total link "<<linkcount<<endl;
     while(true)
@@ -675,7 +714,7 @@ void menu()
 
 
 
-        cout << "\n1.tag's parent\n2.tag's children\n3. tag's sibilings \n6.exit \n" ;
+        cout << "\n1.tag's parent\n2.tag's children\n3. tag's sibilings \n6.Convert into LaTeX \n" ;
         cin >> choice ;
         if(choice==6)
         {
@@ -701,13 +740,13 @@ void menu()
 
         if(choice==4)
         {
-            getTagAttributeOrString(root,tagStr,'!');
+            //getTagAttributeOrString(root,tagStr,'!');
         }
         if(choice==5)
         {
 
 
-            operation1(tagStr);
+            //operation1(tagStr);
 
 
 
@@ -784,6 +823,10 @@ void outputTreePreOrder(Node *parent,string &fileprint)
     {
         return;
     }
+     else if(tag=="<samp>")
+    {
+        return;
+    }
     else if(tag=="<img>")
     {
         return;
@@ -794,7 +837,7 @@ void outputTreePreOrder(Node *parent,string &fileprint)
         return;
     }
 
-    else if(tag[0]=='<' && tag[1]=='!' && tag[2]=='d' || tag[2]=='D' )
+    else if(tag[0]=='<' && tag[1]=='!' && (tag[2]=='d' || tag[2]=='D') && (tag[3]=='o' || tag[3]=='O') )
     {
         tag.erase();
         fileprint+="\\documentclass{article}";
@@ -808,6 +851,11 @@ void outputTreePreOrder(Node *parent,string &fileprint)
     }
 //convert bold tag
     else if(tag=="<b>")
+    {
+        fileprint+="\\textbf" ;
+    }
+
+    else if(tag=="<strong>")
     {
         fileprint+="\\textbf" ;
     }
@@ -876,6 +924,12 @@ void outputTreePreOrder(Node *parent,string &fileprint)
         tag.erase();
         fileprint+="\\begin{itemize}";
     }
+
+       else if(tag=="<ol>")
+    {
+        tag.erase();
+        fileprint+="\\begin{enumerate}";
+    }
 //convert list item tag
     else if(tag=="<li>")
     {
@@ -938,7 +992,7 @@ void outputTreePreOrder(Node *parent,string &fileprint)
             // fstream fork2("latex.txt",std::fstream::app);
             fileprint+="\\";
             //cout<<tag;
-            //tag=insert_slash(tag);
+             tag=insert_slash(tag);
             tag.replace(0,1,"");
             tag.replace(4,1,"{");
             tag.replace(5,1,"");
@@ -1021,7 +1075,7 @@ void  parser()
     mp.insert({"!ty",1});
     mp.insert({"!ti",1});
     mp.insert({"!8p",1});
-    mp.insert({"!0",1});
+    mp.insert({"!0\"",1});
     mp.insert({"!6p",1});
     mp.insert({"!au",1});
     mp.insert({"!ma",1});
@@ -1029,6 +1083,11 @@ void  parser()
     mp.insert({"!&#",1});
     mp.insert({"!sb",1});
     mp.insert({"~&c",1});
+    mp.insert({"~lv",1});
+    mp.insert({"<lv",1});
+    mp.insert({"!lv",1});
+    mp.insert({"~#3",1});
+    mp.insert({"!#3",1});
     /*mp.insert({"<b>",6});
     mp.insert({"<h1>",7});
     mp.insert({"<h2>",1});
@@ -1051,7 +1110,9 @@ void  parser()
     fork<<endl;
     fork<<endl;
     fork<<"\\end{itemize}";
+    fork<<"\\end{enumerate}";
     fork<<"\\end{document}";
+
 
 
     menu() ;
